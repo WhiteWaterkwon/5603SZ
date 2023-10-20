@@ -39,13 +39,13 @@
 // <o> Mode 
 //    <0x02=> PTX
 //    <0x03=> PRX
-#define _HOST_TESTMODE_            3
+#define _HOST_TESTMODE_            2
 
 // <o> Data Rate
 //    <250=> 250K bps
 //    <1000=>  1M bps
 //    <2000=>  2M bps
-#define DATARATE                   1000
+#define DATARATE                   250
 
 // <o> Syncword
 //    <3=> 3 bytes

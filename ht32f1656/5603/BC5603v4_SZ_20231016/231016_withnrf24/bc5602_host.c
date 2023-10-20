@@ -718,12 +718,14 @@ static void init_5603_v4_sz_ic_20230615(void)
                                     //        [1]  RX_FULL
                                     //        [0]  RX_EMPTY
 																		
-    spi_w(0x06, 0x80|0x20);         //IO1     [5:3]GIO2S[2:0]=0h:-     , [2:0]GIO1S[2:0]=0h:-      , [7:6]PADDS[1:0] PAD drive strength:0:0.5mA,1:1mA,2:5mA,3:10mA
+    spi_w(0x06, 0x80|0x28|0x01);         //IO1     [5:3]GIO2S[2:0]=0h:-     , [2:0]GIO1S[2:0]=0h:-      , [7:6]PADDS[1:0] PAD drive strength:0:0.5mA,1:1mA,2:5mA,3:10mA
     
   #if   _SPI_WIRES_ == 3
     spi_w(0x07, 0x00);              //IO2     [7:4]GIO4S[3:0]=5h:IRQ   , [3:0]GIO3S[3:0]=0h:-
   #elif _SPI_WIRES_ == 4
-    spi_w(0x07, 0x15);              //IO2     [7:4]GIO4S[3:0]=5h:IRQ   , [3:0]GIO3S[3:0]=0h:-
+    //spi_w(0x07, 0x15);              //IO2     [7:4]GIO4S[3:0]=5h:IRQ   , [3:0]GIO3S[3:0]=0h:-
+		//spi_w(0x07, 0x00);
+		spi_w(0x07, 0x40);
   #endif
 		  
     spi_w(0x08, 0x7F);            //IO3     [7]  SDO_TEN
@@ -761,7 +763,7 @@ static void init_5603_v4_sz_ic_20230615(void)
                                     //        [3] 
                                     //        [2:0]D_RATE      
 																		
-			spi_w(0x12, 0x30);          //DM2     [7:0]FD_HOLD  
+			spi_w(0x12, 0x20);          //DM2     [7:0]FD_HOLD  
 			spi_w(0x13, 0x10);            //RT1 (04_SETUP_RETR)
                                     //        [7:4]ARD: auto retransmit delay
                                     //        [3:0]ARC: auto retransmit count			
@@ -795,19 +797,19 @@ static void init_5603_v4_sz_ic_20230615(void)
                                     //        [2]  EN_DPL    : enable dynamic payload length
                                     //        [1]  EN_ACK_PLD: enable ack_packet with payload
                                     //        [0]  EN_DYN_ACK: enable W_TX_PAYLOAD_NOACK command													
-    spi_w(0x2C, 0x20);              //RXPW0 (11_RX_PW_P0)
+    spi_w(0x2C, 0x01);              //RXPW0 (11_RX_PW_P0)
                                     //        [7:6]-
                                     //        [5:0]RX_PW_P0
-    spi_w(0x2D, 0x20);              //RXPW1 (12_RX_PW_P1)
+    spi_w(0x2D, 0x08);              //RXPW1 (12_RX_PW_P1)
                                     //        [7:6]-
                                     //        [5:0]RX_PW_P1
-    spi_w(0x2E, 0x20);              //RXPW2 (13_RX_PW_P2)
+    spi_w(0x2E, 0x10);              //RXPW2 (13_RX_PW_P2)
                                     //        [7:6]-
                                     //        [5:0]RX_PW_P2
-    spi_w(0x2F, 0x20);              //RXPW3 (14_RX_PW_P3)
+    spi_w(0x2F, 0x18);              //RXPW3 (14_RX_PW_P3)
                                     //        [7:6]-
                                     //        [5:0]RX_PW_P3
-    spi_w(0x30, 0x20);              //RXPW4 (15_RX_PW_P4)
+    spi_w(0x30, 0x1C);              //RXPW4 (15_RX_PW_P4)
                                     //        [7:6]-
                                     //        [5:0]RX_PW_P4
     spi_w(0x31, 0x20);              //RXPW5 (16_RX_PW_P5)
@@ -1022,13 +1024,13 @@ static void init_5603_v4_sz_ic_20230615(void)
 		                                //        [6:4]  IB_PGA 
                                     //        [2:0]  CLA  						
 	  #if   DATARATE == 250
-			//spi_w(0x2F, 0x18);   				  //TEST1				//Divation 170k
+			spi_w(0x2F, 0x18);   				  //TEST1				//Divation 170k
 		                                //        [7]  DACFD_EN 
                                     //        [6]  MMDFD_EN  
 		                                //        [4]  DLY_BPS_EN 
                                     //        [3]  DAC_DLY_EN  
                                     //        [2:0] DAC_DLY			
-			spi_w(0x2F, 0xD8);				//Diviation 200k																		
+			//spi_w(0x2F, 0xD8);				//Diviation 200k																		
 		#elif DATARATE == 1000
 				spi_w(0x2F, 0x0E);  		 //TEST1	
 		#elif DATARATE == 2000
@@ -1045,7 +1047,7 @@ static void init_5603_v4_sz_ic_20230615(void)
 		#elif DATARATE == 1000
 			spi_w(0x3B, 0x1F);					//AGC6      	ABORT TIME 			
 		#elif DATARATE == 2000
-			spi_w(0x3B, 0x1F);						//AGC6	ABORT TIME	
+			spi_w(0x3B, 0x00);						//AGC6	ABORT TIME	
 		#endif
 
 		                              //[4:0]ABORT_TIME 
@@ -1421,6 +1423,11 @@ static void init_mcu(void)
 
 static void init_5602(void)
 {
+	write_PE0_RESET_0;
+	write_PE0_SET_1;
+	write_PE0_RESET_0;
+	write_PE0_SET_1;
+	write_PE0_RESET_0;
 		init_5603_v4_sz_ic_20230615();
 //init_5602_fifomode();
 }
@@ -1579,7 +1586,7 @@ spi_read_sta1_omst();
                 #if 0
                 if( !(spi_read_fifostatus()&0x20) ) { // not TX_FULL
                     movedata_to_spiTxQ___ptx(0);
-                    if     (spiTxQ.remote_pipe_no==0) {movedata_spiTxQ_to_ptx_txfifo(0x11);} // test 0x13: pipe 0 as broadcast no_ack=1
+                    if     (spiTxQ.remote_pipe_no==0) {movedata_spiTxQ_to_ptx_txfifo(0x13);} // test 0x13: pipe 0 as broadcast no_ack=1
                     else if(spiTxQ.remote_pipe_no==1) {movedata_spiTxQ_to_ptx_txfifo(0x11);}
                     else if(spiTxQ.remote_pipe_no==2) {movedata_spiTxQ_to_ptx_txfifo(0x11);}
                     else if(spiTxQ.remote_pipe_no==3) {movedata_spiTxQ_to_ptx_txfifo(0x11);}
@@ -1588,7 +1595,7 @@ spi_read_sta1_omst();
                 }
                 if( !(spi_read_fifostatus()&0x20) ) { // not TX_FULL
                     movedata_to_spiTxQ___ptx(0);
-                    if     (spiTxQ.remote_pipe_no==0) {movedata_spiTxQ_to_ptx_txfifo(0x11);} // test 0x13: pipe 0 as broadcast no_ack=1
+                    if     (spiTxQ.remote_pipe_no==0) {movedata_spiTxQ_to_ptx_txfifo(0x13);} // test 0x13: pipe 0 as broadcast no_ack=1
                     else if(spiTxQ.remote_pipe_no==1) {movedata_spiTxQ_to_ptx_txfifo(0x11);}
                     else if(spiTxQ.remote_pipe_no==2) {movedata_spiTxQ_to_ptx_txfifo(0x11);}
                     else if(spiTxQ.remote_pipe_no==3) {movedata_spiTxQ_to_ptx_txfifo(0x11);}
@@ -1597,7 +1604,7 @@ spi_read_sta1_omst();
                 }
                 if( !(spi_read_fifostatus()&0x20) ) { // not TX_FULL
                     movedata_to_spiTxQ___ptx(0);
-                    if     (spiTxQ.remote_pipe_no==0) {movedata_spiTxQ_to_ptx_txfifo(0x11);} // test 0x13: pipe 0 as broadcast no_ack=1
+                    if     (spiTxQ.remote_pipe_no==0) {movedata_spiTxQ_to_ptx_txfifo(0x13);} // test 0x13: pipe 0 as broadcast no_ack=1
                     else if(spiTxQ.remote_pipe_no==1) {movedata_spiTxQ_to_ptx_txfifo(0x11);}
                     else if(spiTxQ.remote_pipe_no==2) {movedata_spiTxQ_to_ptx_txfifo(0x11);}
                     else if(spiTxQ.remote_pipe_no==3) {movedata_spiTxQ_to_ptx_txfifo(0x11);}
@@ -1606,7 +1613,7 @@ spi_read_sta1_omst();
                 }
                 if( !(spi_read_fifostatus()&0x20) ) { // not TX_FULL
                     movedata_to_spiTxQ___ptx(0);
-                    if     (spiTxQ.remote_pipe_no==0) {movedata_spiTxQ_to_ptx_txfifo(0x11);} // test 0x13: pipe 0 as broadcast no_ack=1
+                    if     (spiTxQ.remote_pipe_no==0) {movedata_spiTxQ_to_ptx_txfifo(0x13);} // test 0x13: pipe 0 as broadcast no_ack=1
                     else if(spiTxQ.remote_pipe_no==1) {movedata_spiTxQ_to_ptx_txfifo(0x11);}
                     else if(spiTxQ.remote_pipe_no==2) {movedata_spiTxQ_to_ptx_txfifo(0x11);}
                     else if(spiTxQ.remote_pipe_no==3) {movedata_spiTxQ_to_ptx_txfifo(0x11);}
@@ -1615,7 +1622,7 @@ spi_read_sta1_omst();
                 }
                 if( !(spi_read_fifostatus()&0x20) ) { // not TX_FULL
                     movedata_to_spiTxQ___ptx(0);
-                    if     (spiTxQ.remote_pipe_no==0) {movedata_spiTxQ_to_ptx_txfifo(0x11);} // test 0x13: pipe 0 as broadcast no_ack=1
+                    if     (spiTxQ.remote_pipe_no==0) {movedata_spiTxQ_to_ptx_txfifo(0x13);} // test 0x13: pipe 0 as broadcast no_ack=1
                     else if(spiTxQ.remote_pipe_no==1) {movedata_spiTxQ_to_ptx_txfifo(0x11);}
                     else if(spiTxQ.remote_pipe_no==2) {movedata_spiTxQ_to_ptx_txfifo(0x11);}
                     else if(spiTxQ.remote_pipe_no==3) {movedata_spiTxQ_to_ptx_txfifo(0x11);}
@@ -1624,11 +1631,11 @@ spi_read_sta1_omst();
                 }				
 								
 								#endif
-//r_irq2 = spi_read_fifostatus();
+r_irq2 = spi_read_fifostatus();
 //uart_puts("r_irq2="); uart_putu8(r_irq2); uart_puts("  "); uart_putchar_n('\n');
                 #if  TX_METHOD_CE == 0 
-                spi_w(0x15, 0x00);                  //CE      [7]DISABLED_TXEN, [6]DISABLED_RXEN,  [5:1]-,   [0]CE
-								//uart_puts("strobe tx");
+                //spi_w(0x15, 0x00);                  //CE      [7]DISABLED_TXEN, [6]DISABLED_RXEN,  [5:1]-,   [0]CE
+								uart_puts("strobe tx");
 								if(debug_i < TX_PKT_CNT){
 									
                 spi_cmd0_0E_TX();
@@ -1639,8 +1646,10 @@ spi_read_sta1_omst();
                 //no need to spi_cmd0_0E_TX()
                 #endif
                 spi_cmd0_20_set_register_bank(0);
+								uart_puts("333");
                 while( (spi_r(0x26)&0x07)!=0x04 ) {;}       // STA1  [2:0]OMST 0:Deep Sleep Mode, 2:Light Sleep Mode, 4:TX Mode, 5: RX Mode, 6:Calibration mode
-                hfsm1.state = ST_PTX_W4_TXCOMPLETE;
+								uart_puts("444");
+									hfsm1.state = ST_PTX_W4_TXCOMPLETE;
             }
         break;
     case ST_PTX_W4_TXCOMPLETE:
@@ -1723,7 +1732,7 @@ else {
     case ST_PTX___________:
               //if(tmr50usIsExpired(hfsm1.delay_offset, 20000))  // debug
               //if(tmr50usIsExpired(hfsm1.delay_offset,  500))  // debug
-               if(tmr50usIsExpired(hfsm1.delay_offset,  100))  // debug
+               if(tmr50usIsExpired(hfsm1.delay_offset,  200))  // debug
               //if(tmr50usIsExpired(hfsm1.delay_offset,   2000))  // debug
                 {
 										debug_i=1;
@@ -1733,7 +1742,7 @@ else {
     case ST_PTX_MAXRT_DELAY_BEFORE_NEXT_TRANS:
               //  if(tmr50usIsExpired(hfsm1.delay_offset, 200))  // debug
               //if(tmr50usIsExpired(hfsm1.delay_offset,  500))  // debug
-              if(tmr50usIsExpired(hfsm1.delay_offset,   100))  // debug
+              if(tmr50usIsExpired(hfsm1.delay_offset,   200))  // debug
                 {
                     if(debug_i<1000){
                     spi_cmd0_0E_TX();
@@ -1846,6 +1855,7 @@ static void host5602_fsm1_prx(void)
 
 								macroCSN_SELECT_FPGA;
                 spi_cmd0_20_set_register_bank(0);
+		/*
 								 if (DPL2_EN_ACK_PLD == 0x02)
                 {
 
@@ -1855,14 +1865,13 @@ static void host5602_fsm1_prx(void)
                         movedata_spiTxQ_to_prx_txfifo(spiTxQ.remote_pipe_no);
 											
                     }
-                }
+                }*/
 									
 									spi_w(0x15, 0x01);                  //CE      [7]DISABLED_TXEN, [6]DISABLED_RXEN,  [5:1]-,   [0]CE
                // while( (spi_r(0x26)&0x07)!=0x05 ) {;}       // STA1  [2:0]OMST 0:Deep Sleep Mode, 2:Light Sleep Mode, 4:TX Mode, 5: RX Mode, 6:Calibration mode
             
 						hfsm1.delay_offset = tmr50usGetCurrentTicks();
             hfsm1.state = ST_PRX_W4_RXCOMPLETE;
-									
         break;
     case ST_PRX_W4_RXCOMPLETE:
              #if 0
@@ -1875,25 +1884,30 @@ static void host5602_fsm1_prx(void)
                     break;
                 }
                 #endif
-		
+						//uart_puts("gain_sel= ");uart_putu8(spi_r(0x22)); //uart_putchar_n('\n');
+							spi_cmd0_20_set_register_bank(1);
+							spi_r(0x22);
             if (GPIO_IRQ3_IS_RESET())
             {
-								delay_unit_50us(0);
+								//delay_unit_50us(0);
                 r_irq1 = spi_read_n_clear_irq1();
-							
+								
 //r_irq2=spi_read_fifostatus();
 //uart_puts("r_irq2="); uart_putu8(r_irq2); uart_puts(" ");
               //if( r_irq1 & 0x10 ) {                   // [4]MAX_RT, PRX no MAX_RT
               //}
               //if( r_irq1 & 0x20 ) {                   // [5]TX_DS   ack_payload is confirmed by "PID from remote PTX is different"
               //}
-                if( r_irq1 & 0x40 ) {                   // [6]RX_DR									
+                if( r_irq1 & 0x40 ) {                   // [6]RX_DR											
+							unsigned char rx_pipe_no;									
 									 debug_i++;
+									spi_cmd0_09_txfifo_flush();
                 r_irq2 = spi_read_fifostatus();
+									
 								//uart_putu8(r_irq2);
               //  if( r_irq2 & 0x02 ) {                   // RX_FULL    test: wait RX_FULL then read
                  {
-                        unsigned char rx_pipe_no;
+                        
                       //unsigned char rssi;
 												//spi_cmd0_20_set_register_bank(1);
 												//uart_puts("gain_sel= ");uart_putu8(spi_r(0x22)); //uart_putchar_n('\n');
@@ -1906,7 +1920,7 @@ static void host5602_fsm1_prx(void)
                       //uart_puts("fifoSTATUS=");  uart_putu8(r_irq2);     uart_puts("  ");  //uart_putchar_n('\n');
 												uart_puts("packets_i= ");uart_putu16(debug_i); //uart_putchar_n('\n');
                         uart_puts(" RX_P_NO=");     uart_putu8(rx_pipe_no); uart_puts("  ");  //uart_putchar_n('\n');
-                    callback_spiRxQ_process_at_hfsm2();
+                   callback_spiRxQ_process_at_hfsm2();
                 }// while( ((r_irq2 = spi_read_fifostatus()) & 0x01)==0x00 ); // [0]RX_EMPTY
                // }
 								if (DPL2_EN_ACK_PLD == 0x02)
@@ -1914,7 +1928,8 @@ static void host5602_fsm1_prx(void)
                     if( !(spi_read_fifostatus()&0x20) )  // not TX_FULL
                     {
                         movedata_to_spiTxQ___prx();
-                        movedata_spiTxQ_to_prx_txfifo(spiTxQ.remote_pipe_no);	
+                        //movedata_spiTxQ_to_prx_txfifo(spiTxQ.remote_pipe_no);
+											movedata_spiTxQ_to_prx_txfifo(rx_pipe_no);
                     }
                 }	
                 }

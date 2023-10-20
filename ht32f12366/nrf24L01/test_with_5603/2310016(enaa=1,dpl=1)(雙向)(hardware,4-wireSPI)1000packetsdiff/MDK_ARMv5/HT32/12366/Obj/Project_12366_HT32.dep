@@ -49,7 +49,7 @@ I (..\..\..\..\utilities\common/i2c_eeprom.h)(0x5913D46E)
 I (..\..\..\..\utilities\common/spi_flash.h)(0x5AD95C08)
 I (..\..\..\..\utilities\common/ebi_lcd.h)(0x5913D46E)
 I (..\ht32_board_config.h)(0x5E27B656)
-I (..\nrf2401_host.h)(0x64FAD372)
+I (..\nrf2401_host.h)(0x6530E387)
 I (..\usart.h)(0x586CA3C4)
 I (..\doxydefgroup.h)(0x59F28F7C)
 F (..\ht32f1xxxx_01_it.c)(0x5D35516A)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\ -I ..\..\..\..\library\HT32F1xxxx_Driver\inc -I ..\..\..\..\library\CMSIS\Include -I ..\..\..\..\library\Device\Holtek\HT32F1xxxx\Include -I ..\..\..\..\library\HT32_USBD_Library\inc -I ..\..\..\..\utilities-I.\RTE\_HT32-IC:\Keil_v5\ARM\PACK\Holtek\HT32_DFP\1.0.18\ARM\INC\Holtek\HT32F1xxxx-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DUSE_HT32F12365_66 -DUSE_HT32_DRIVER -DUSE_HT32F12366_SK -DUSE_HT32F12365_66 -DUSE_MEM_HT32F12366-o .\ht32\12366\obj\ht32f1xxxx_01_it.o --omf_browse .\ht32\12366\obj\ht32f1xxxx_01_it.crf --depend .\ht32\12366\obj\ht32f1xxxx_01_it.d)
@@ -104,7 +104,7 @@ I (..\..\..\..\utilities\common/ebi_lcd.h)(0x5913D46E)
 I (..\ht32_board_config.h)(0x5E27B656)
 I (..\usart.h)(0x586CA3C4)
 I (..\tmr50us.h)(0x59FC04E6)
-F (..\nrf2401_host.c)(0x64FAD372)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\ -I ..\..\..\..\library\HT32F1xxxx_Driver\inc -I ..\..\..\..\library\CMSIS\Include -I ..\..\..\..\library\Device\Holtek\HT32F1xxxx\Include -I ..\..\..\..\library\HT32_USBD_Library\inc -I ..\..\..\..\utilities-I.\RTE\_HT32-IC:\Keil_v5\ARM\PACK\Holtek\HT32_DFP\1.0.18\ARM\INC\Holtek\HT32F1xxxx-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DUSE_HT32F12365_66 -DUSE_HT32_DRIVER -DUSE_HT32F12366_SK -DUSE_HT32F12365_66 -DUSE_MEM_HT32F12366-o .\ht32\12366\obj\nrf2401_host.o --omf_browse .\ht32\12366\obj\nrf2401_host.crf --depend .\ht32\12366\obj\nrf2401_host.d)
+F (..\nrf2401_host.c)(0x652FA2CD)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\ -I ..\..\..\..\library\HT32F1xxxx_Driver\inc -I ..\..\..\..\library\CMSIS\Include -I ..\..\..\..\library\Device\Holtek\HT32F1xxxx\Include -I ..\..\..\..\library\HT32_USBD_Library\inc -I ..\..\..\..\utilities-I.\RTE\_HT32-IC:\Keil_v5\ARM\PACK\Holtek\HT32_DFP\1.0.18\ARM\INC\Holtek\HT32F1xxxx-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DUSE_HT32F12365_66 -DUSE_HT32_DRIVER -DUSE_HT32F12366_SK -DUSE_HT32F12365_66 -DUSE_MEM_HT32F12366-o .\ht32\12366\obj\nrf2401_host.o --omf_browse .\ht32\12366\obj\nrf2401_host.crf --depend .\ht32\12366\obj\nrf2401_host.d)
 I (..\..\..\..\library\HT32F1xxxx_Driver\inc\ht32.h)(0x5925C194)
 I (..\..\..\..\library\Device\Holtek\HT32F1xxxx\Include\ht32f1xxxx_01.h)(0x599DAC4A)
 I (..\..\..\..\library\CMSIS\Include\core_cm3.h)(0x5913D46E)
@@ -155,11 +155,11 @@ I (..\..\..\..\utilities\common/spi_flash.h)(0x5AD95C08)
 I (..\..\..\..\utilities\common/ebi_lcd.h)(0x5913D46E)
 I (..\ht32_board_config.h)(0x5E27B656)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
-I (..\nrf2401_host.h)(0x64FAD372)
+I (..\nrf2401_host.h)(0x6530E387)
 I (..\softspi.h)(0x64FAD372)
 I (..\tmr50us.h)(0x59FC04E6)
 I (..\usart.h)(0x586CA3C4)
-F (..\softspi.c)(0x64FAD372)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\ -I ..\..\..\..\library\HT32F1xxxx_Driver\inc -I ..\..\..\..\library\CMSIS\Include -I ..\..\..\..\library\Device\Holtek\HT32F1xxxx\Include -I ..\..\..\..\library\HT32_USBD_Library\inc -I ..\..\..\..\utilities-I.\RTE\_HT32-IC:\Keil_v5\ARM\PACK\Holtek\HT32_DFP\1.0.18\ARM\INC\Holtek\HT32F1xxxx-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DUSE_HT32F12365_66 -DUSE_HT32_DRIVER -DUSE_HT32F12366_SK -DUSE_HT32F12365_66 -DUSE_MEM_HT32F12366-o .\ht32\12366\obj\softspi.o --omf_browse .\ht32\12366\obj\softspi.crf --depend .\ht32\12366\obj\softspi.d)
+F (..\softspi.c)(0x652F84F3)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\ -I ..\..\..\..\library\HT32F1xxxx_Driver\inc -I ..\..\..\..\library\CMSIS\Include -I ..\..\..\..\library\Device\Holtek\HT32F1xxxx\Include -I ..\..\..\..\library\HT32_USBD_Library\inc -I ..\..\..\..\utilities-I.\RTE\_HT32-IC:\Keil_v5\ARM\PACK\Holtek\HT32_DFP\1.0.18\ARM\INC\Holtek\HT32F1xxxx-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DUSE_HT32F12365_66 -DUSE_HT32_DRIVER -DUSE_HT32F12366_SK -DUSE_HT32F12365_66 -DUSE_MEM_HT32F12366-o .\ht32\12366\obj\softspi.o --omf_browse .\ht32\12366\obj\softspi.crf --depend .\ht32\12366\obj\softspi.d)
 I (..\..\..\..\library\HT32F1xxxx_Driver\inc\ht32.h)(0x5925C194)
 I (..\..\..\..\library\Device\Holtek\HT32F1xxxx\Include\ht32f1xxxx_01.h)(0x599DAC4A)
 I (..\..\..\..\library\CMSIS\Include\core_cm3.h)(0x5913D46E)
@@ -209,7 +209,7 @@ I (..\..\..\..\utilities\common/i2c_eeprom.h)(0x5913D46E)
 I (..\..\..\..\utilities\common/spi_flash.h)(0x5AD95C08)
 I (..\..\..\..\utilities\common/ebi_lcd.h)(0x5913D46E)
 I (..\ht32_board_config.h)(0x5E27B656)
-I (..\nrf2401_host.h)(0x64FAD372)
+I (..\nrf2401_host.h)(0x6530E387)
 I (..\usart.h)(0x586CA3C4)
 I (..\softspi.h)(0x64FAD372)
 F (..\tmr50us.c)(0x5D1F1BB6)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\ -I ..\..\..\..\library\HT32F1xxxx_Driver\inc -I ..\..\..\..\library\CMSIS\Include -I ..\..\..\..\library\Device\Holtek\HT32F1xxxx\Include -I ..\..\..\..\library\HT32_USBD_Library\inc -I ..\..\..\..\utilities-I.\RTE\_HT32-IC:\Keil_v5\ARM\PACK\Holtek\HT32_DFP\1.0.18\ARM\INC\Holtek\HT32F1xxxx-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DUSE_HT32F12365_66 -DUSE_HT32_DRIVER -DUSE_HT32F12366_SK -DUSE_HT32F12365_66 -DUSE_MEM_HT32F12366-o .\ht32\12366\obj\tmr50us.o --omf_browse .\ht32\12366\obj\tmr50us.crf --depend .\ht32\12366\obj\tmr50us.d)

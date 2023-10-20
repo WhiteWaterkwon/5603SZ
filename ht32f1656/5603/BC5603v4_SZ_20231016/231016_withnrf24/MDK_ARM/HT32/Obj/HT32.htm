@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\HT32\Obj\HT32.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\HT32\Obj\HT32.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Mon Oct 16 10:36:42 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Tue Oct 17 14:28:07 2023
 <BR><P>
 <H3>Maximum Stack Usage =        156 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -274,7 +274,7 @@ Global Symbols
 <P><STRONG><a name="[45]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
 <BR>[Address Reference Count : 1]<UL><LI> startup_ht32f165x.o(RESET)
 </UL>
-<P><STRONG><a name="[a4]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+<P><STRONG><a name="[a2]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
 
 <P><STRONG><a name="[48]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
@@ -284,15 +284,15 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[a5]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+<P><STRONG><a name="[a3]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
 
-<P><STRONG><a name="[a6]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+<P><STRONG><a name="[a4]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
 
-<P><STRONG><a name="[a7]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+<P><STRONG><a name="[a5]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
 
-<P><STRONG><a name="[a8]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+<P><STRONG><a name="[a6]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
 
-<P><STRONG><a name="[a9]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+<P><STRONG><a name="[a7]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
 
 <P><STRONG><a name="[49]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
@@ -300,12 +300,12 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[aa]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[a8]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
 <P><STRONG><a name="[86]"></a>AFIO_GPxConfig</STRONG> (Thumb, 94 bytes, Stack size 32 bytes, ht32f1655_56_gpio.o(i.AFIO_GPxConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = AFIO_GPxConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_mcu
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_mcu
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pd012346_as_outputmode
 <LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_PE_OUTPUT_MDOE
@@ -373,17 +373,17 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_ht32f165x.o(RESET)
 </UL>
 <P><STRONG><a name="[87]"></a>GPIO_DirectionConfig</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, ht32f1655_56_gpio.o(i.GPIO_DirectionConfig))
-<BR><BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_mcu
+<BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_mcu
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pd012346_as_outputmode
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_PE_OUTPUT_MDOE
 </UL>
 
 <P><STRONG><a name="[89]"></a>GPIO_InputConfig</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, ht32f1655_56_gpio.o(i.GPIO_InputConfig))
-<BR><BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_mcu
+<BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_mcu
 </UL>
 
 <P><STRONG><a name="[88]"></a>GPIO_PullResistorConfig</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, ht32f1655_56_gpio.o(i.GPIO_PullResistorConfig))
-<BR><BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_mcu
+<BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_mcu
 <LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -391,8 +391,9 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_IRQ3_IS_RESET
 </UL>
 
-<P><STRONG><a name="[9e]"></a>GPIO_WriteOutBits</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, ht32f1655_56_gpio.o(i.GPIO_WriteOutBits))
-<BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_PE_OUTPUT_MDOE
+<P><STRONG><a name="[80]"></a>GPIO_WriteOutBits</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, ht32f1655_56_gpio.o(i.GPIO_WriteOutBits))
+<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_process
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_PE_OUTPUT_MDOE
 </UL>
 
 <P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, ht32f165x_it.o(i.HardFault_Handler))
@@ -515,11 +516,11 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_ht32f165x.o(RESET)
 </UL>
-<P><STRONG><a name="[ab]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[a9]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
 
-<P><STRONG><a name="[ac]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[aa]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
 
-<P><STRONG><a name="[ad]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[ab]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
 <P><STRONG><a name="[5c]"></a>callback_spiRxQ_process_at_hfsm2</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, bc5602_host2.o(i.callback_spiRxQ_process_at_hfsm2))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = callback_spiRxQ_process_at_hfsm2 &rArr; uart_putu8 &rArr; lownibble_to_ascii &rArr; uart_putchar
@@ -528,7 +529,7 @@ Global Symbols
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_puts
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_putchar_n
 </UL>
-<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_ptx
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_prx
 </UL>
@@ -539,33 +540,28 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tmr50usIsExpired
 </UL>
 <BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_5603_v4_sz_ic_20230615
-<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_prx
 </UL>
 
-<P><STRONG><a name="[7e]"></a>entry_hfsm1_prx</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, bc5602_host.o(i.entry_hfsm1_prx))
+<P><STRONG><a name="[7d]"></a>entry_hfsm1_prx</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, bc5602_host.o(i.entry_hfsm1_prx))
 <BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm2
 </UL>
 
-<P><STRONG><a name="[7d]"></a>entry_hfsm1_ptx</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, bc5602_host.o(i.entry_hfsm1_ptx))
-<BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm2
+<P><STRONG><a name="[7c]"></a>host5602_fsm2</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, bc5602_host2.o(i.host5602_fsm2))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = host5602_fsm2
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;entry_hfsm1_prx
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_process
 </UL>
 
-<P><STRONG><a name="[7c]"></a>host5602_fsm2</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, bc5602_host2.o(i.host5602_fsm2))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = host5602_fsm2
-</UL>
-<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;entry_hfsm1_ptx
-<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;entry_hfsm1_prx
-</UL>
-<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_process
-</UL>
-
-<P><STRONG><a name="[7f]"></a>host5602_process</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, bc5602_host.o(i.host5602_process))
+<P><STRONG><a name="[7e]"></a>host5602_process</STRONG> (Thumb, 108 bytes, Stack size 0 bytes, bc5602_host.o(i.host5602_process))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = host5602_process &rArr; host5602_fsm1 &rArr; host5602_fsm1_ptx &rArr; movedata_to_spiTxQ___ptx &rArr; movedata_to_spiTxQ
 </UL>
-<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_mcu
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_mcu
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_5603_v4_sz_ic_20230615
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm2
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_WriteOutBits
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -575,13 +571,13 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pd012346_as_outputmode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_mcu
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_mcu
 </UL>
 
 <P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 208 bytes, Stack size 56 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = main &rArr; host5602_process &rArr; host5602_fsm1 &rArr; host5602_fsm1_ptx &rArr; movedata_to_spiTxQ___ptx &rArr; movedata_to_spiTxQ
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_process
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_process
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Interrupt_Init
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_SELOutputCmd
 <LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Init
@@ -597,34 +593,34 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
-<P><STRONG><a name="[79]"></a>movedata_spiTxQ_to_ptx_txfifo</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, bc5602_host.o(i.movedata_spiTxQ_to_ptx_txfifo))
+<P><STRONG><a name="[7a]"></a>movedata_spiTxQ_to_ptx_txfifo</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, bc5602_host.o(i.movedata_spiTxQ_to_ptx_txfifo))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = movedata_spiTxQ_to_ptx_txfifo &rArr; spi_cmdd_13_txfifo_write_no_ack
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_13_txfifo_write_no_ack
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_11_txfifo_write
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_13_txfifo_write_no_ack
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_11_txfifo_write
 </UL>
 <BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_ptx
 </UL>
 
-<P><STRONG><a name="[9d]"></a>movedata_to_spiTxQ</STRONG> (Thumb, 34 bytes, Stack size 12 bytes, bc5602_host.o(i.movedata_to_spiTxQ))
+<P><STRONG><a name="[9c]"></a>movedata_to_spiTxQ</STRONG> (Thumb, 34 bytes, Stack size 12 bytes, bc5602_host.o(i.movedata_to_spiTxQ))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = movedata_to_spiTxQ
 </UL>
-<BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_to_spiTxQ___ptx
-<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_to_spiTxQ___prx
+<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_to_spiTxQ___ptx
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_to_spiTxQ___prx
 </UL>
 
-<P><STRONG><a name="[6d]"></a>movedata_to_spiTxQ___prx</STRONG> (Thumb, 62 bytes, Stack size 48 bytes, bc5602_host2.o(i.movedata_to_spiTxQ___prx))
+<P><STRONG><a name="[73]"></a>movedata_to_spiTxQ___prx</STRONG> (Thumb, 62 bytes, Stack size 48 bytes, bc5602_host2.o(i.movedata_to_spiTxQ___prx))
 <BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = movedata_to_spiTxQ___prx &rArr; movedata_to_spiTxQ
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_to_spiTxQ
+<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_to_spiTxQ
 </UL>
 <BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_prx
 </UL>
 
-<P><STRONG><a name="[78]"></a>movedata_to_spiTxQ___ptx</STRONG> (Thumb, 82 bytes, Stack size 48 bytes, bc5602_host2.o(i.movedata_to_spiTxQ___ptx))
+<P><STRONG><a name="[79]"></a>movedata_to_spiTxQ___ptx</STRONG> (Thumb, 82 bytes, Stack size 48 bytes, bc5602_host2.o(i.movedata_to_spiTxQ___ptx))
 <BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = movedata_to_spiTxQ___ptx &rArr; movedata_to_spiTxQ
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_to_spiTxQ
+<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_to_spiTxQ
 </UL>
 <BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_ptx
 </UL>
@@ -634,71 +630,72 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_DirectionConfig
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AFIO_GPxConfig
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_WriteOutBits
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_WriteOutBits
 </UL>
-<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_mcu
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_mcu
 </UL>
 
-<P><STRONG><a name="[9f]"></a>spi_cmd0</STRONG> (Thumb, 62 bytes, Stack size 24 bytes, softspi.o(i.spi_cmd0))
+<P><STRONG><a name="[9d]"></a>spi_cmd0</STRONG> (Thumb, 62 bytes, Stack size 24 bytes, softspi.o(i.spi_cmd0))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = spi_cmd0
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_octet
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_octet
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_89_rxfifo_flush
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_20_set_register_bank
-<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_0F_middlesleep
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_0E_TX
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_0C_lightsleep
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_0F_middlesleep
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_0E_TX
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_0C_lightsleep
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_0A_deepsleep
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_09_txfifo_flush
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_09_txfifo_flush
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_08_software_reset
 </UL>
 
 <P><STRONG><a name="[83]"></a>spi_cmd0_08_software_reset</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, spi_cmd.o(i.spi_cmd0_08_software_reset))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = spi_cmd0_08_software_reset &rArr; spi_cmd0
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0
 </UL>
 <BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_5603_v4_sz_ic_20230615
 </UL>
 
-<P><STRONG><a name="[7b]"></a>spi_cmd0_09_txfifo_flush</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, spi_cmd.o(i.spi_cmd0_09_txfifo_flush))
+<P><STRONG><a name="[6f]"></a>spi_cmd0_09_txfifo_flush</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, spi_cmd.o(i.spi_cmd0_09_txfifo_flush))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = spi_cmd0_09_txfifo_flush &rArr; spi_cmd0
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0
 </UL>
 <BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_ptx
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_prx
 </UL>
 
 <P><STRONG><a name="[82]"></a>spi_cmd0_0A_deepsleep</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, spi_cmd.o(i.spi_cmd0_0A_deepsleep))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = spi_cmd0_0A_deepsleep &rArr; spi_cmd0
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0
 </UL>
 <BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_5603_v4_sz_ic_20230615
 </UL>
 
-<P><STRONG><a name="[77]"></a>spi_cmd0_0C_lightsleep</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, spi_cmd.o(i.spi_cmd0_0C_lightsleep))
+<P><STRONG><a name="[78]"></a>spi_cmd0_0C_lightsleep</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, spi_cmd.o(i.spi_cmd0_0C_lightsleep))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = spi_cmd0_0C_lightsleep &rArr; spi_cmd0
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0
 </UL>
 <BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_5603_v4_sz_ic_20230615
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_ptx
 </UL>
 
-<P><STRONG><a name="[7a]"></a>spi_cmd0_0E_TX</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, spi_cmd.o(i.spi_cmd0_0E_TX))
+<P><STRONG><a name="[7b]"></a>spi_cmd0_0E_TX</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, spi_cmd.o(i.spi_cmd0_0E_TX))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = spi_cmd0_0E_TX &rArr; spi_cmd0
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0
 </UL>
 <BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_ptx
 </UL>
 
-<P><STRONG><a name="[75]"></a>spi_cmd0_0F_middlesleep</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, spi_cmd.o(i.spi_cmd0_0F_middlesleep))
+<P><STRONG><a name="[76]"></a>spi_cmd0_0F_middlesleep</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, spi_cmd.o(i.spi_cmd0_0F_middlesleep))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = spi_cmd0_0F_middlesleep &rArr; spi_cmd0
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0
 </UL>
 <BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_ptx
 </UL>
@@ -706,18 +703,18 @@ Global Symbols
 <P><STRONG><a name="[69]"></a>spi_cmd0_20_set_register_bank</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, spi_cmd.o(i.spi_cmd0_20_set_register_bank))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = spi_cmd0_20_set_register_bank &rArr; spi_cmd0
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0
 </UL>
 <BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_5603_v4_sz_ic_20230615
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_ptx
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_prx
-<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_sta1_omst
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_sta1_omst
 </UL>
 
 <P><STRONG><a name="[6a]"></a>spi_cmd0_89_rxfifo_flush</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, spi_cmd.o(i.spi_cmd0_89_rxfifo_flush))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = spi_cmd0_89_rxfifo_flush &rArr; spi_cmd0
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0
 </UL>
 <BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_prx
 </UL>
@@ -725,48 +722,48 @@ Global Symbols
 <P><STRONG><a name="[61]"></a>spi_cmdd_10_write_pipe_0_ID</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, softspi.o(i.spi_cmdd_10_write_pipe_0_ID))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = spi_cmdd_10_write_pipe_0_ID &rArr; spi_write_ID
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_write_ID
+<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_write_ID
 </UL>
 <BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_syncID
 <LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;change_syncword_ptxPipe0_to_prxPipeYouwant
 </UL>
 
-<P><STRONG><a name="[9b]"></a>spi_cmdd_11_txfifo_write</STRONG> (Thumb, 98 bytes, Stack size 32 bytes, softspi.o(i.spi_cmdd_11_txfifo_write))
+<P><STRONG><a name="[9a]"></a>spi_cmdd_11_txfifo_write</STRONG> (Thumb, 98 bytes, Stack size 32 bytes, softspi.o(i.spi_cmdd_11_txfifo_write))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = spi_cmdd_11_txfifo_write
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_octet
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_octet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_spiTxQ_to_ptx_txfifo
+<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_spiTxQ_to_ptx_txfifo
 </UL>
 
 <P><STRONG><a name="[8d]"></a>spi_cmdd_12_write_pipe_1_ID</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, softspi.o(i.spi_cmdd_12_write_pipe_1_ID))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = spi_cmdd_12_write_pipe_1_ID &rArr; spi_write_ID
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_write_ID
+<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_write_ID
 </UL>
 <BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_syncID
 </UL>
 
-<P><STRONG><a name="[9c]"></a>spi_cmdd_13_txfifo_write_no_ack</STRONG> (Thumb, 98 bytes, Stack size 32 bytes, softspi.o(i.spi_cmdd_13_txfifo_write_no_ack))
+<P><STRONG><a name="[9b]"></a>spi_cmdd_13_txfifo_write_no_ack</STRONG> (Thumb, 98 bytes, Stack size 32 bytes, softspi.o(i.spi_cmdd_13_txfifo_write_no_ack))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = spi_cmdd_13_txfifo_write_no_ack
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_octet
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_octet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_spiTxQ_to_ptx_txfifo
+<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_spiTxQ_to_ptx_txfifo
 </UL>
 
-<P><STRONG><a name="[9a]"></a>spi_cmdd_18_txfifo_prx_w_ack_payload</STRONG> (Thumb, 108 bytes, Stack size 32 bytes, softspi.o(i.spi_cmdd_18_txfifo_prx_w_ack_payload))
+<P><STRONG><a name="[74]"></a>spi_cmdd_18_txfifo_prx_w_ack_payload</STRONG> (Thumb, 108 bytes, Stack size 32 bytes, softspi.o(i.spi_cmdd_18_txfifo_prx_w_ack_payload))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = spi_cmdd_18_txfifo_prx_w_ack_payload
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_octet
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_octet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_spiTxQ_to_prx_txfifo
+<BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_prx
 </UL>
 
 <P><STRONG><a name="[8c]"></a>spi_cmdd_90_read_pipe_0_ID</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, softspi.o(i.spi_cmdd_90_read_pipe_0_ID))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = spi_cmdd_90_read_pipe_0_ID &rArr; spi_read_ID
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_ID
+<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_ID
 </UL>
 <BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_syncID
 </UL>
@@ -774,39 +771,39 @@ Global Symbols
 <P><STRONG><a name="[8e]"></a>spi_cmdd_92_read_pipe_1_ID</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, softspi.o(i.spi_cmdd_92_read_pipe_1_ID))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = spi_cmdd_92_read_pipe_1_ID &rArr; spi_read_ID
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_ID
+<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_ID
 </UL>
 <BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_syncID
 </UL>
 
-<P><STRONG><a name="[a3]"></a>spi_cmdd_BF_rxfifo_read</STRONG> (Thumb, 120 bytes, Stack size 40 bytes, softspi.o(i.spi_cmdd_BF_rxfifo_read))
+<P><STRONG><a name="[a1]"></a>spi_cmdd_BF_rxfifo_read</STRONG> (Thumb, 120 bytes, Stack size 40 bytes, softspi.o(i.spi_cmdd_BF_rxfifo_read))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = spi_cmdd_BF_rxfifo_read
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_octet
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_octet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_rxfifo_to_spiRxQ
+<BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_rxfifo_to_spiRxQ
 </UL>
 
-<P><STRONG><a name="[71]"></a>spi_r</STRONG> (Thumb, 86 bytes, Stack size 24 bytes, softspi.o(i.spi_r))
+<P><STRONG><a name="[6d]"></a>spi_r</STRONG> (Thumb, 86 bytes, Stack size 24 bytes, softspi.o(i.spi_r))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = spi_r
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_octet
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_octet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_rxfifo_to_spiRxQ
-<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_n_clear_irq1
-<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_fifostatus
-<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
+<BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_rxfifo_to_spiRxQ
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_n_clear_irq1
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_fifostatus
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_5603_v4_sz_ic_20230615
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_ptx
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_prx
-<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_sta1_omst
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_sta1_omst
 </UL>
 
-<P><STRONG><a name="[76]"></a>spi_read_sta1_omst</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, bc5602_host.o(i.spi_read_sta1_omst))
+<P><STRONG><a name="[77]"></a>spi_read_sta1_omst</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, bc5602_host.o(i.spi_read_sta1_omst))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = spi_read_sta1_omst &rArr; spi_cmd0_20_set_register_bank &rArr; spi_cmd0
 </UL>
 <BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_20_set_register_bank
-<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_r
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_r
 </UL>
 <BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_ptx
 </UL>
@@ -814,16 +811,16 @@ Global Symbols
 <P><STRONG><a name="[68]"></a>spi_w</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, softspi.o(i.spi_w))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = spi_w
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_octet
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_octet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_n_clear_irq1
+<BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_n_clear_irq1
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_clear_irq1
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_5603_v4_sz_ic_20230615
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_ptx
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_prx
 </UL>
 
-<P><STRONG><a name="[6f]"></a>tmr50usGetCurrentTicks</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, tmr50us.o(i.tmr50usGetCurrentTicks))
+<P><STRONG><a name="[6c]"></a>tmr50usGetCurrentTicks</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, tmr50us.o(i.tmr50usGetCurrentTicks))
 <BR><BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_ptx
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_prx
 </UL>
@@ -861,7 +858,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_putchar
 </UL>
-<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_syncID
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_5603_v4_sz_ic_20230615
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_ptx
@@ -871,7 +868,7 @@ Global Symbols
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;callback_spiRxQ_process_at_hfsm2
 </UL>
 
-<P><STRONG><a name="[73]"></a>uart_putu16</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, usart.o(i.uart_putu16))
+<P><STRONG><a name="[72]"></a>uart_putu16</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, usart.o(i.uart_putu16))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = uart_putu16 &rArr; lownibble_to_ascii &rArr; uart_putchar
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lownibble_to_ascii
@@ -885,7 +882,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lownibble_to_ascii
 </UL>
-<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_syncID
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_ptx
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_prx
@@ -906,7 +903,7 @@ Local Symbols
 <BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_putchar
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_putu8
-<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_putu16
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_putu16
 </UL>
 
 <P><STRONG><a name="[8b]"></a>pd012346_as_outputmode</STRONG> (Thumb, 152 bytes, Stack size 8 bytes, softspi.o(i.pd012346_as_outputmode))
@@ -918,31 +915,31 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_softspi
 </UL>
 
-<P><STRONG><a name="[a0]"></a>spi_octet</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, softspi.o(i.spi_octet))
+<P><STRONG><a name="[9e]"></a>spi_octet</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, softspi.o(i.spi_octet))
 <BR><BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_w
-<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_r
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_BF_rxfifo_read
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_18_txfifo_prx_w_ack_payload
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_13_txfifo_write_no_ack
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_11_txfifo_write
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_write_ID
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_ID
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_r
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_BF_rxfifo_read
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_18_txfifo_prx_w_ack_payload
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_13_txfifo_write_no_ack
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_11_txfifo_write
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_write_ID
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_ID
 </UL>
 
-<P><STRONG><a name="[a2]"></a>spi_read_ID</STRONG> (Thumb, 92 bytes, Stack size 32 bytes, softspi.o(i.spi_read_ID))
+<P><STRONG><a name="[a0]"></a>spi_read_ID</STRONG> (Thumb, 92 bytes, Stack size 32 bytes, softspi.o(i.spi_read_ID))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = spi_read_ID
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_octet
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_octet
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_92_read_pipe_1_ID
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_90_read_pipe_0_ID
 </UL>
 
-<P><STRONG><a name="[a1]"></a>spi_write_ID</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, softspi.o(i.spi_write_ID))
+<P><STRONG><a name="[9f]"></a>spi_write_ID</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, softspi.o(i.spi_write_ID))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = spi_write_ID
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_octet
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_octet
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_12_write_pipe_1_ID
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_10_write_pipe_0_ID
@@ -953,7 +950,7 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInBit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_ptx
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_prx
 </UL>
@@ -972,7 +969,7 @@ Local Symbols
 <BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_puts
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_putchar_n
 </UL>
-<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_prx
 </UL>
 
@@ -985,62 +982,62 @@ Local Symbols
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_puts
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_putchar_n
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_process
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_process
 </UL>
 
 <P><STRONG><a name="[67]"></a>host5602_fsm1_prx</STRONG> (Thumb, 290 bytes, Stack size 16 bytes, bc5602_host.o(i.host5602_fsm1_prx))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = host5602_fsm1_prx &rArr; prx_process_possible_rxdr_before_roleswitch_to_ptx &rArr; spi_read_rxfifo_to_spiRxQ &rArr; spi_cmdd_BF_rxfifo_read
 </UL>
-<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_rxfifo_to_spiRxQ
-<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_n_clear_irq1
-<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_fifostatus
+<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_rxfifo_to_spiRxQ
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_n_clear_irq1
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_fifostatus
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_clear_irq1
-<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
-<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_spiTxQ_to_prx_txfifo
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_rxpackets_from_ptx_not_consecutive
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_IRQ3_IS_RESET
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_89_rxfifo_flush
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_20_set_register_bank
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_09_txfifo_flush
 <LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_w
-<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_r
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_r
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_18_txfifo_prx_w_ack_payload
 <LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tmr50usIsExpired
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tmr50usGetCurrentTicks
-<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_unit_50us
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tmr50usGetCurrentTicks
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_putu8
-<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_putu16
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_putu16
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_puts
-<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_to_spiTxQ___prx
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_to_spiTxQ___prx
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;callback_spiRxQ_process_at_hfsm2
 </UL>
 <BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1
 </UL>
 
-<P><STRONG><a name="[66]"></a>host5602_fsm1_ptx</STRONG> (Thumb, 622 bytes, Stack size 32 bytes, bc5602_host.o(i.host5602_fsm1_ptx))
+<P><STRONG><a name="[66]"></a>host5602_fsm1_ptx</STRONG> (Thumb, 634 bytes, Stack size 32 bytes, bc5602_host.o(i.host5602_fsm1_ptx))
 <BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = host5602_fsm1_ptx &rArr; movedata_to_spiTxQ___ptx &rArr; movedata_to_spiTxQ
 </UL>
-<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_rxfifo_to_spiRxQ
-<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_n_clear_irq1
-<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_fifostatus
+<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_rxfifo_to_spiRxQ
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_n_clear_irq1
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_fifostatus
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_clear_irq1
 <LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;change_syncword_ptxPipe0_to_prxPipeYouwant
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_IRQ3_IS_RESET
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_20_set_register_bank
-<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_0F_middlesleep
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_0E_TX
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_0C_lightsleep
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_09_txfifo_flush
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_0F_middlesleep
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_0E_TX
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_0C_lightsleep
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_09_txfifo_flush
 <LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_w
-<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_r
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_r
 <LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tmr50usIsExpired
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tmr50usGetCurrentTicks
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tmr50usGetCurrentTicks
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_putu8
-<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_putu16
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_putu16
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_puts
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_putchar_n
-<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_to_spiTxQ___ptx
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_to_spiTxQ___ptx
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;callback_spiRxQ_process_at_hfsm2
-<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_sta1_omst
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_spiTxQ_to_ptx_txfifo
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_sta1_omst
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;movedata_spiTxQ_to_ptx_txfifo
 </UL>
 <BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1
 </UL>
@@ -1050,18 +1047,18 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_syncID
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_20_set_register_bank
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_0C_lightsleep
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_0C_lightsleep
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_0A_deepsleep
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd0_08_software_reset
 <LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_w
-<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_r
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_r
 <LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_unit_50us
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_puts
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_process
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_process
 </UL>
 
-<P><STRONG><a name="[80]"></a>init_mcu</STRONG> (Thumb, 108 bytes, Stack size 16 bytes, bc5602_host.o(i.init_mcu))
+<P><STRONG><a name="[7f]"></a>init_mcu</STRONG> (Thumb, 108 bytes, Stack size 16 bytes, bc5602_host.o(i.init_mcu))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = init_mcu &rArr; init_softspi &rArr; pd012346_as_outputmode &rArr; AFIO_GPxConfig
 </UL>
 <BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_DirectionConfig
@@ -1071,7 +1068,7 @@ Local Symbols
 <LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_InputConfig
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_PE_OUTPUT_MDOE
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_process
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_process
 </UL>
 
 <P><STRONG><a name="[84]"></a>init_syncID</STRONG> (Thumb, 146 bytes, Stack size 16 bytes, bc5602_host.o(i.init_syncID))
@@ -1088,23 +1085,15 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_5603_v4_sz_ic_20230615
 </UL>
 
-<P><STRONG><a name="[6e]"></a>movedata_spiTxQ_to_prx_txfifo</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, bc5602_host.o(i.movedata_spiTxQ_to_prx_txfifo))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = movedata_spiTxQ_to_prx_txfifo &rArr; spi_cmdd_18_txfifo_prx_w_ack_payload
-</UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_18_txfifo_prx_w_ack_payload
-</UL>
-<BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_prx
-</UL>
-
-<P><STRONG><a name="[74]"></a>prx_process_possible_rxdr_before_roleswitch_to_ptx</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, bc5602_host.o(i.prx_process_possible_rxdr_before_roleswitch_to_ptx))
+<P><STRONG><a name="[75]"></a>prx_process_possible_rxdr_before_roleswitch_to_ptx</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, bc5602_host.o(i.prx_process_possible_rxdr_before_roleswitch_to_ptx))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = prx_process_possible_rxdr_before_roleswitch_to_ptx &rArr; spi_read_rxfifo_to_spiRxQ &rArr; spi_cmdd_BF_rxfifo_read
 </UL>
-<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_rxfifo_to_spiRxQ
-<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_n_clear_irq1
-<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_fifostatus
+<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_rxfifo_to_spiRxQ
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_n_clear_irq1
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_fifostatus
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_rxpackets_from_ptx_not_consecutive
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_IRQ3_IS_RESET
-<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_r
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_r
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_putu8
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_puts
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;callback_spiRxQ_process_at_hfsm2
@@ -1121,34 +1110,34 @@ Local Symbols
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_prx
 </UL>
 
-<P><STRONG><a name="[6c]"></a>spi_read_fifostatus</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, bc5602_host.o(i.spi_read_fifostatus))
+<P><STRONG><a name="[70]"></a>spi_read_fifostatus</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, bc5602_host.o(i.spi_read_fifostatus))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = spi_read_fifostatus &rArr; spi_r
 </UL>
-<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_r
+<BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_r
 </UL>
-<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_ptx
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_prx
 </UL>
 
-<P><STRONG><a name="[70]"></a>spi_read_n_clear_irq1</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, bc5602_host.o(i.spi_read_n_clear_irq1))
+<P><STRONG><a name="[6e]"></a>spi_read_n_clear_irq1</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, bc5602_host.o(i.spi_read_n_clear_irq1))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = spi_read_n_clear_irq1 &rArr; spi_w
 </UL>
 <BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_w
-<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_r
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_r
 </UL>
-<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_ptx
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_prx
 </UL>
 
-<P><STRONG><a name="[72]"></a>spi_read_rxfifo_to_spiRxQ</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, bc5602_host.o(i.spi_read_rxfifo_to_spiRxQ))
+<P><STRONG><a name="[71]"></a>spi_read_rxfifo_to_spiRxQ</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, bc5602_host.o(i.spi_read_rxfifo_to_spiRxQ))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = spi_read_rxfifo_to_spiRxQ &rArr; spi_cmdd_BF_rxfifo_read
 </UL>
-<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_r
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_BF_rxfifo_read
+<BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_r
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmdd_BF_rxfifo_read
 </UL>
-<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prx_process_possible_rxdr_before_roleswitch_to_ptx
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_ptx
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;host5602_fsm1_prx
 </UL>

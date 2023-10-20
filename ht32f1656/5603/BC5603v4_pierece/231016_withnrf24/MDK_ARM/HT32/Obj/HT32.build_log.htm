@@ -1,0 +1,65 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: £gVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: sean chang, holtek, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.28.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DLM.DLL V1.26.0.0
+Target DLL:      holtek-elink32.dll V???
+Dialog DLL:      TLM.DLL V1.24.0.0
+ 
+<h2>Project:</h2>
+D:\code\gitCode\1656_5603with12366_nrf24\ht32f1656\5603\BC5603v4_pierece\231016_withnrf24\MDK_ARM\Project.uvproj
+Project File Date:  09/15/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'HT32'
+compiling bc5602_host.c...
+..\bc5602_host.c(680): warning:  #177-D: variable "i"  was declared but never referenced
+  		int i;
+..\bc5602_host.c(1703): warning:  #111-D: statement is unreachable
+  									debug_TX_DS++;
+..\bc5602_host.c(1526): warning:  #550-D: variable "r_irq2"  was set but never used
+      unsigned char r_irq1, r_irq2;
+..\bc5602_host.c(1834): warning:  #550-D: variable "r_irq2"  was set but never used
+      unsigned char r_irq1, r_irq2;
+..\bc5602_host.c(1853): warning:  #550-D: variable "r_irq2"  was set but never used
+      unsigned char r_irq1, r_irq2;
+..\bc5602_host.c(1854): warning:  #177-D: variable "aaaaaa"  was declared but never referenced
+      static unsigned char  aaaaaa;
+..\bc5602_host.c(387): warning:  #177-D: function "spi_write_2fpga_rxg"  was declared but never referenced
+  static void spi_write_2fpga_rxg(void)
+..\bc5602_host.c(396): warning:  #177-D: function "init_1adc"  was declared but never referenced
+  static void init_1adc(void)
+..\bc5602_host.c(402): warning:  #177-D: function "__read_fpga_all_ctrl_registers"  was declared but never referenced
+  static void __read_fpga_all_ctrl_registers(void)
+..\bc5602_host.c(601): warning:  #177-D: function "test_read_chip_version"  was declared but never referenced
+  static void test_read_chip_version(void)
+..\bc5602_host.c(1440): warning:  #177-D: function "read_rt2_upon_txds"  was declared but never referenced
+  static void read_rt2_upon_txds(void)
+..\bc5602_host.c(1447): warning:  #177-D: function "read_rt2_upon_maxrt"  was declared but never referenced
+  static void read_rt2_upon_maxrt(void)
+..\bc5602_host.c(1503): warning:  #177-D: function "debug_rxpackets_from_prx_not_consecutive"  was declared but never referenced
+  static void debug_rxpackets_from_prx_not_consecutive(unsigned char len, unsigned char *pPayload)
+..\bc5602_host.c: 13 warnings, 0 errors
+linking...
+Program Size: Code=6832 RO-data=32 RW-data=116 ZI-data=2660  
+FromELF: creating hex file...
+".\HT32\Obj\HT32.axf" - 0 Error(s), 13 Warning(s).
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

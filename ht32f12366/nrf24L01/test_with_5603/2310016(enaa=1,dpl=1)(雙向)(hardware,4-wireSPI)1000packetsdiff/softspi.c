@@ -293,8 +293,8 @@ void rf_ConfigurePipe(u8 pipe_no, const u8 *addr)
     //Enable data pipe
     rf_SendCmdMasked(EN_RXADDR, _BV(pipe_no), _BV(pipe_no));
     rf_SendCmdMasked(EN_AA,     _BV(pipe_no), _BV(pipe_no));
- // rf_SendCmdMasked(EN_AA,     _BV(pipe_no), 0x00        );
-  //rf_SendCmdMasked(EN_AA,             0x3F, 0x00        );//If any bit in the EN_AA is high, will enable EN_CRC forced high
+  //rf_SendCmdMasked(EN_AA,     _BV(pipe_no), 0x00        );
+		//rf_SendCmdMasked(EN_AA,             0x3F, 0x00        );//If any bit in the EN_AA is high, will enable EN_CRC forced high
 
     //Set the pipes payload size or enable dynamic size for pipe
     if (_use_dynamic_payload) {
@@ -303,7 +303,19 @@ void rf_ConfigurePipe(u8 pipe_no, const u8 *addr)
     else {
 
         rf_SendCmdMasked(DYNPD, _BV(pipe_no), 0x00);
-        rf_SendCmd_2(RX_PW_P0 + pipe_no, _payload_sz);
+        //rf_SendCmd_2(RX_PW_P0 + pipe_no, _payload_sz);
+			  if(pipe_no ==0)
+				rf_SendCmd_2(RX_PW_P0 + pipe_no, 1);
+				else if(pipe_no ==1)
+				rf_SendCmd_2(RX_PW_P0 + pipe_no, 8);
+				else if(pipe_no ==2)
+				rf_SendCmd_2(RX_PW_P0 + pipe_no, 16);
+				else if(pipe_no ==3)
+				rf_SendCmd_2(RX_PW_P0 + pipe_no, 24);
+				else if(pipe_no ==4)
+				rf_SendCmd_2(RX_PW_P0 + pipe_no, 28);
+				else 
+				rf_SendCmd_2(RX_PW_P0 + pipe_no, 32);
     }
     
     //Set the pipe at pupe_no to active, meaning it's been configured.
@@ -422,7 +434,7 @@ u8 rf_SendData(u8 pipe_no, unsigned char* data, u8 len)
     
     //Send the data by writing the W_TX_PAYLOAD first to tell the device we are
     //    going to sending the data next.
-   //spi_Write(W_TX_PAYLOAD, e_begin);       // Write cmd to write payload
+  // spi_Write(W_TX_PAYLOAD, e_begin);       // Write cmd to write payload
   spi_Write(W_TX_PAYLOAD_NOACK, e_begin); // Write cmd to write payload
     for (i = 0; i < len; i++)
     {

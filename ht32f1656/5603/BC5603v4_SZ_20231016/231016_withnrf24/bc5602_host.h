@@ -54,14 +54,14 @@
 // <o> Mode 
 //    <0x04=> PTX
 //    <0x05=> PRX
-#define _HOST_TESTMODE_            4
+#define _HOST_TESTMODE_            5
 
 
 // <o> Data Rate
 //    <250=> 250 kbps
 //    <1000=>  1 Mbps
 //    <2000=>  2 Mbps
-#define DATARATE                   1000
+#define DATARATE                   2000
 
 // <o> Middle Sleep Time (unit: 50 us)
 //    <0-1000000:1>
@@ -88,16 +88,16 @@
 #define DM1_AW                     0x03
 // <o> pipe 0 Address [39:8]
 //    <0x00000000-0xFFFFFFFF:0x1>
-#define P0_SYNCWORD            0xF2E1F226
-//#define P0_SYNCWORD            0x07EEF24A
+//#define P0_SYNCWORD            0xF2E1F226
+#define P0_SYNCWORD            0x07EEF24A
 //	#define P0_SYNCWORD            0x324AF2EE
 //#define P0_SYNCWORD            0x76543412
 //#define P0_SYNCWORD            0xE2E1F223
 // <o> pipe 0 LSByte
 //    <0x00-0xFF:0x1>
-#define P0_LSBYTE                 0x7F
+//#define P0_LSBYTE                 0x7F
 //#define P0_LSBYTE                 0x76
-//#define P0_LSBYTE                 0xD1
+#define P0_LSBYTE                 0xD1
 //  #define P0_LSBYTE                 0x07
 // <o> pipe 1 Address [39:8]
 //    <0x00000000-0xFFFFFFFF:0x1>

@@ -267,10 +267,8 @@ GPIO_ToggleOutBits(HT_GPIOE, GPIO_PIN_0);    GPIO_ToggleOutBits(HT_GPIOE, GPIO_P
 
   //const u8 pipe0_addr[5] = { 0x72, 0xE1, 0xF2, 0x26, 0x7F };  //pipe 0
 // const u8 pipe0_addr[5] = { 0xe2, 0xe1, 0xf2, 0x23, 0x7f };  //pipe 0
-	//	const u8 pipe0_addr[5] = { 0x25,0x4A,0xF2,0xEE,0x07 };
-  //const u8 pipe0_addr[5] = { 0x07,0xEE,0xF2,0x4A,0xD1 };
- // const u8 pipe0_addr[5] = { 0x32,0x4A,0xF2,0xEE,0x07 };
-  const u8 pipe0_addr[5] = { 0xF2, 0xe1, 0xf2, 0x26, 0x7F };
+	const u8 pipe0_addr[5] = { 0xD1,0x4A,0xF2,0xEE,0x07 };
+//  const u8 pipe0_addr[5] = { 0xF2, 0xe1, 0xf2, 0x26, 0x7F };
   const u8 pipe1_addr[5] = { 0xF2, 0xE1, 0xF6, 0x23, 0x71 };  //pipe 1
   const u8 pipe2_addr[5] = { 0xF2, 0xE1, 0xF6, 0x23, 0x72 };  //pipe 2
   const u8 pipe3_addr[5] = { 0xF2, 0xE1, 0xF6, 0x23, 0x73 };  //pipe 3
@@ -469,7 +467,7 @@ rewrite_syncID();
   //    delay_unit_50us(5000);
 				debug_i=1;
       //delay_unit_50us(100);
-				   delay_unit_50us(200); //200*50us=10ms > 6.3ms (remote 5602 uart print take ~6.3ms)
+				   delay_unit_50us(100); //200*50us=10ms > 6.3ms (remote 5602 uart print take ~6.3ms)
 
     }
 		else
