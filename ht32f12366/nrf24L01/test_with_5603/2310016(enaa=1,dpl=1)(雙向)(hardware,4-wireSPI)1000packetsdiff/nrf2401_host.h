@@ -45,7 +45,7 @@
 //    <250=> 250K bps
 //    <1000=>  1M bps
 //    <2000=>  2M bps
-#define DATARATE                   250
+#define DATARATE                   1000
 
 // <o> Syncword
 //    <3=> 3 bytes

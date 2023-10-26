@@ -434,8 +434,8 @@ u8 rf_SendData(u8 pipe_no, unsigned char* data, u8 len)
     
     //Send the data by writing the W_TX_PAYLOAD first to tell the device we are
     //    going to sending the data next.
-  // spi_Write(W_TX_PAYLOAD, e_begin);       // Write cmd to write payload
-  spi_Write(W_TX_PAYLOAD_NOACK, e_begin); // Write cmd to write payload
+   spi_Write(W_TX_PAYLOAD, e_begin);       // Write cmd to write payload
+  //spi_Write(W_TX_PAYLOAD_NOACK, e_begin); // Write cmd to write payload
     for (i = 0; i < len; i++)
     {
         volatile u8 chr;

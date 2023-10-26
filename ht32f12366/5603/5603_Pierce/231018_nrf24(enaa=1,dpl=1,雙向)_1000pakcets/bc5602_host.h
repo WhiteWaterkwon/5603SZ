@@ -37,6 +37,10 @@
 // <<< Use Configuration Wizard in Context Menu >>>
 
 //<h> Board
+// <o> BC5603 IC
+//    <28=>  D800 5602 G2TC8 Pierece
+//    <36=>	 BC Module 5603 Pierece
+#define _5603Board_	28
 // <o> Front End IC
 //    <23=>  5602 V3 MP Fullmask
 //    <07=>  5602G2_TC7_220831
@@ -44,7 +48,7 @@
 #define _FRONTEND_V_               12
 // <o> RF_CH 0~127, (2400+RF_CH)Mhz
 //    <0-127:1>
-#define RFCH_FRONTEND              83
+#define RFCH_FRONTEND              40
 //</h>
 
 // <o> SPI software or hardware

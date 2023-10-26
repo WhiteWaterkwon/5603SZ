@@ -48,10 +48,15 @@ Section Cross References
     tmr50us.o(i.delay_unit_50us) refers to tmr50us.o(.data) for .data
     tmr50us.o(i.tmr50usGetCurrentTicks) refers to tmr50us.o(.data) for .data
     tmr50us.o(i.tmr50usIsExpired) refers to tmr50us.o(.data) for .data
+    softspi.o(i.SPI_SDIO_INPUT_MDOE) refers to ht32f1655_56_gpio.o(i.AFIO_GPxConfig) for AFIO_GPxConfig
+    softspi.o(i.SPI_SDIO_INPUT_MDOE) refers to ht32f1655_56_gpio.o(i.GPIO_DirectionConfig) for GPIO_DirectionConfig
+    softspi.o(i.SPI_SDIO_INPUT_MDOE) refers to ht32f1655_56_gpio.o(i.GPIO_PullResistorConfig) for GPIO_PullResistorConfig
+    softspi.o(i.SPI_SDIO_INPUT_MDOE) refers to ht32f1655_56_gpio.o(i.GPIO_InputConfig) for GPIO_InputConfig
+    softspi.o(i.SPI_SDIO_OUTPUT_MDOE) refers to ht32f1655_56_gpio.o(i.AFIO_GPxConfig) for AFIO_GPxConfig
+    softspi.o(i.SPI_SDIO_OUTPUT_MDOE) refers to ht32f1655_56_gpio.o(i.GPIO_DirectionConfig) for GPIO_DirectionConfig
     softspi.o(i.init_softspi) refers to softspi.o(i.pd012346_as_outputmode) for pd012346_as_outputmode
     softspi.o(i.pd012346_as_outputmode) refers to ht32f1655_56_gpio.o(i.AFIO_GPxConfig) for AFIO_GPxConfig
     softspi.o(i.pd012346_as_outputmode) refers to ht32f1655_56_gpio.o(i.GPIO_DirectionConfig) for GPIO_DirectionConfig
-    softspi.o(i.spi_cmd0) refers to softspi.o(i.spi_octet) for spi_octet
     softspi.o(i.spi_cmd0) refers to softspi.o(.data) for .data
     softspi.o(i.spi_cmdd_10_write_pipe_0_ID) refers to softspi.o(i.spi_write_ID) for spi_write_ID
     softspi.o(i.spi_cmdd_11_txfifo_write) refers to softspi.o(i.spi_octet) for spi_octet
@@ -64,11 +69,24 @@ Section Cross References
     softspi.o(i.spi_cmdd_90_read_pipe_0_ID) refers to softspi.o(i.spi_read_ID) for spi_read_ID
     softspi.o(i.spi_cmdd_92_read_pipe_1_ID) refers to softspi.o(i.spi_read_ID) for spi_read_ID
     softspi.o(i.spi_cmdd_9F_read_chip_version) refers to softspi.o(i.spi_octet) for spi_octet
+    softspi.o(i.spi_cmdd_9F_read_chip_version) refers to softspi.o(i.SPI_SDIO_INPUT_MDOE) for SPI_SDIO_INPUT_MDOE
+    softspi.o(i.spi_cmdd_9F_read_chip_version) refers to softspi.o(i.spi_read_ID_foo) for spi_read_ID_foo
+    softspi.o(i.spi_cmdd_9F_read_chip_version) refers to softspi.o(i.SPI_SDIO_OUTPUT_MDOE) for SPI_SDIO_OUTPUT_MDOE
     softspi.o(i.spi_cmdd_BF_rxfifo_read) refers to softspi.o(i.spi_octet) for spi_octet
+    softspi.o(i.spi_cmdd_BF_rxfifo_read) refers to softspi.o(i.SPI_SDIO_INPUT_MDOE) for SPI_SDIO_INPUT_MDOE
+    softspi.o(i.spi_cmdd_BF_rxfifo_read) refers to ht32f1655_56_gpio.o(i.GPIO_ReadInBit) for GPIO_ReadInBit
+    softspi.o(i.spi_cmdd_BF_rxfifo_read) refers to softspi.o(i.SPI_SDIO_OUTPUT_MDOE) for SPI_SDIO_OUTPUT_MDOE
     softspi.o(i.spi_cmdd_BF_rxfifo_read) refers to softspi.o(.data) for .data
     softspi.o(i.spi_r) refers to softspi.o(i.spi_octet) for spi_octet
+    softspi.o(i.spi_r) refers to softspi.o(i.SPI_SDIO_INPUT_MDOE) for SPI_SDIO_INPUT_MDOE
+    softspi.o(i.spi_r) refers to ht32f1655_56_gpio.o(i.GPIO_ReadInBit) for GPIO_ReadInBit
+    softspi.o(i.spi_r) refers to softspi.o(i.SPI_SDIO_OUTPUT_MDOE) for SPI_SDIO_OUTPUT_MDOE
     softspi.o(i.spi_r) refers to softspi.o(.data) for .data
     softspi.o(i.spi_read_ID) refers to softspi.o(i.spi_octet) for spi_octet
+    softspi.o(i.spi_read_ID) refers to softspi.o(i.SPI_SDIO_INPUT_MDOE) for SPI_SDIO_INPUT_MDOE
+    softspi.o(i.spi_read_ID) refers to softspi.o(i.spi_read_ID_foo) for spi_read_ID_foo
+    softspi.o(i.spi_read_ID) refers to softspi.o(i.SPI_SDIO_OUTPUT_MDOE) for SPI_SDIO_OUTPUT_MDOE
+    softspi.o(i.spi_read_ID_foo) refers to ht32f1655_56_gpio.o(i.GPIO_ReadInBit) for GPIO_ReadInBit
     softspi.o(i.spi_w) refers to softspi.o(i.spi_octet) for spi_octet
     softspi.o(i.spi_w) refers to softspi.o(.data) for .data
     softspi.o(i.spi_write_ID) refers to softspi.o(i.spi_octet) for spi_octet
@@ -566,10 +584,7 @@ Removing Unused input sections from the image.
     Removing softspi.o(.rev16_text), (4 bytes).
     Removing softspi.o(.revsh_text), (4 bytes).
     Removing softspi.o(.rrx_text), (6 bytes).
-    Removing softspi.o(i.SPI_MISO_INPUT_MDOE), (2 bytes).
-    Removing softspi.o(i.SPI_SDIO_INPUT_MDOE), (12 bytes).
-    Removing softspi.o(i.SPI_SDIO_OUTPUT_MDOE), (12 bytes).
-    Removing softspi.o(i.spi_cmdd_9F_read_chip_version), (72 bytes).
+    Removing softspi.o(i.spi_cmdd_9F_read_chip_version), (68 bytes).
     Removing spi_cmd.o(.rev16_text), (4 bytes).
     Removing spi_cmd.o(.revsh_text), (4 bytes).
     Removing spi_cmd.o(.rrx_text), (6 bytes).
@@ -1242,7 +1257,7 @@ Removing Unused input sections from the image.
     Removing ebi_lcd.o(i._delay), (28 bytes).
     Removing ebi_lcd.o(.data), (4564 bytes).
 
-690 unused section(s) (total 22414 bytes) removed from the image.
+687 unused section(s) (total 22384 bytes) removed from the image.
 
 ==============================================================================
 
@@ -1253,18 +1268,18 @@ Image Symbol Table
     Symbol Name                              Value     Ov Type        Size  Object(Section)
 
     RESET                                    0x00000000   Section      376  startup_ht32f165x.o(RESET)
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  useno.o ABSOLUTE
     ..\..\..\..\library\HT32F1655_56_Driver\src\ht32_cm3_misc.c 0x00000000   Number         0  ht32_cm3_misc.o ABSOLUTE
@@ -1392,100 +1407,104 @@ Image Symbol Table
     i.PendSV_Handler                         0x00000410   Section        0  ht32f165x_it.o(i.PendSV_Handler)
     i.SPI_Cmd                                0x00000412   Section        0  ht32f1655_56_spi.o(i.SPI_Cmd)
     i.SPI_Init                               0x00000426   Section        0  ht32f1655_56_spi.o(i.SPI_Init)
-    i.SPI_SELOutputCmd                       0x00000470   Section        0  ht32f1655_56_spi.o(i.SPI_SELOutputCmd)
-    i.SVC_Handler                            0x00000484   Section        0  ht32f165x_it.o(i.SVC_Handler)
-    i.SysTick_Handler                        0x00000486   Section        0  ht32f165x_it.o(i.SysTick_Handler)
-    i.SystemInit                             0x00000488   Section        0  system_ht32f165x.o(i.SystemInit)
-    i.UART0_IRQHandler                       0x000004e8   Section        0  ht32f165x_it.o(i.UART0_IRQHandler)
-    i.USART_FIFOReset                        0x00000584   Section        0  ht32f1655_56_usart.o(i.USART_FIFOReset)
-    i.USART_Init                             0x0000058c   Section        0  ht32f1655_56_usart.o(i.USART_Init)
-    i.USART_IntConfig                        0x000005c0   Section        0  ht32f1655_56_usart.o(i.USART_IntConfig)
-    i.USART_Interrupt_Init                   0x000005d0   Section        0  ht32f165x_it.o(i.USART_Interrupt_Init)
-    i.USART_RFITLConfig                      0x0000067c   Section        0  ht32f1655_56_usart.o(i.USART_RFITLConfig)
-    i.USART_ReceiveData                      0x00000688   Section        0  ht32f1655_56_usart.o(i.USART_ReceiveData)
-    i.USART_RxCmd                            0x0000068e   Section        0  ht32f1655_56_usart.o(i.USART_RxCmd)
-    i.USART_SendData                         0x000006a2   Section        0  ht32f1655_56_usart.o(i.USART_SendData)
-    i.USART_TFITLConfig                      0x000006a6   Section        0  ht32f1655_56_usart.o(i.USART_TFITLConfig)
-    i.USART_TxCmd                            0x000006b2   Section        0  ht32f1655_56_usart.o(i.USART_TxCmd)
-    i.UsageFault_Handler                     0x000006c6   Section        0  ht32f165x_it.o(i.UsageFault_Handler)
-    i.__scatterload_copy                     0x000006c8   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x000006d6   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x000006d8   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i.callback_spiRxQ_process_at_hfsm2       0x000006e8   Section        0  bc5602_host2.o(i.callback_spiRxQ_process_at_hfsm2)
-    i.change_syncword_ptxPipe0_to_prxPipeYouwant 0x00000744   Section        0  bc5602_host.o(i.change_syncword_ptxPipe0_to_prxPipeYouwant)
-    change_syncword_ptxPipe0_to_prxPipeYouwant 0x00000745   Thumb Code    64  bc5602_host.o(i.change_syncword_ptxPipe0_to_prxPipeYouwant)
-    i.debug_rxpackets_from_ptx_not_consecutive 0x00000788   Section        0  bc5602_host.o(i.debug_rxpackets_from_ptx_not_consecutive)
-    debug_rxpackets_from_ptx_not_consecutive 0x00000789   Thumb Code    90  bc5602_host.o(i.debug_rxpackets_from_ptx_not_consecutive)
-    i.delay_unit_50us                        0x00000828   Section        0  tmr50us.o(i.delay_unit_50us)
-    i.entry_hfsm1_prx                        0x00000844   Section        0  bc5602_host.o(i.entry_hfsm1_prx)
-    i.host5602_fsm1                          0x00000854   Section        0  bc5602_host.o(i.host5602_fsm1)
-    host5602_fsm1                            0x00000855   Thumb Code    90  bc5602_host.o(i.host5602_fsm1)
-    i.host5602_fsm1_prx                      0x000008e0   Section        0  bc5602_host.o(i.host5602_fsm1_prx)
-    host5602_fsm1_prx                        0x000008e1   Thumb Code   290  bc5602_host.o(i.host5602_fsm1_prx)
-    i.host5602_fsm1_ptx                      0x00000a34   Section        0  bc5602_host.o(i.host5602_fsm1_ptx)
-    host5602_fsm1_ptx                        0x00000a35   Thumb Code   584  bc5602_host.o(i.host5602_fsm1_ptx)
-    i.host5602_fsm2                          0x00000cc4   Section        0  bc5602_host2.o(i.host5602_fsm2)
-    i.host5602_process                       0x00000cec   Section        0  bc5602_host.o(i.host5602_process)
-    i.init_5603_v4_sz_ic_20230615            0x00000d28   Section        0  bc5602_host.o(i.init_5603_v4_sz_ic_20230615)
-    init_5603_v4_sz_ic_20230615              0x00000d29   Thumb Code   844  bc5602_host.o(i.init_5603_v4_sz_ic_20230615)
-    i.init_mcu                               0x00001080   Section        0  bc5602_host.o(i.init_mcu)
-    init_mcu                                 0x00001081   Thumb Code   108  bc5602_host.o(i.init_mcu)
-    i.init_softspi                           0x000010f4   Section        0  softspi.o(i.init_softspi)
-    i.init_syncID                            0x000010f8   Section        0  bc5602_host.o(i.init_syncID)
-    init_syncID                              0x000010f9   Thumb Code   146  bc5602_host.o(i.init_syncID)
-    i.lownibble_to_ascii                     0x000011b8   Section        0  usart.o(i.lownibble_to_ascii)
-    lownibble_to_ascii                       0x000011b9   Thumb Code    18  usart.o(i.lownibble_to_ascii)
-    i.main                                   0x000011cc   Section        0  main.o(i.main)
-    i.movedata_spiTxQ_to_ptx_txfifo          0x000012b4   Section        0  bc5602_host.o(i.movedata_spiTxQ_to_ptx_txfifo)
-    i.movedata_to_spiTxQ                     0x000012e0   Section        0  bc5602_host.o(i.movedata_to_spiTxQ)
-    i.movedata_to_spiTxQ___prx               0x00001308   Section        0  bc5602_host2.o(i.movedata_to_spiTxQ___prx)
-    i.movedata_to_spiTxQ___ptx               0x0000134c   Section        0  bc5602_host2.o(i.movedata_to_spiTxQ___ptx)
-    i.pd012346_as_outputmode                 0x000013a4   Section        0  softspi.o(i.pd012346_as_outputmode)
-    pd012346_as_outputmode                   0x000013a5   Thumb Code   152  softspi.o(i.pd012346_as_outputmode)
-    i.prx_process_possible_rxdr_before_roleswitch_to_ptx 0x00001440   Section        0  bc5602_host.o(i.prx_process_possible_rxdr_before_roleswitch_to_ptx)
-    prx_process_possible_rxdr_before_roleswitch_to_ptx 0x00001441   Thumb Code    76  bc5602_host.o(i.prx_process_possible_rxdr_before_roleswitch_to_ptx)
-    i.set_PE_OUTPUT_MDOE                     0x000014a8   Section        0  bc5602_host.o(i.set_PE_OUTPUT_MDOE)
-    i.spi_clear_irq1                         0x000015a4   Section        0  bc5602_host.o(i.spi_clear_irq1)
-    spi_clear_irq1                           0x000015a5   Thumb Code     8  bc5602_host.o(i.spi_clear_irq1)
-    i.spi_cmd0                               0x000015ac   Section        0  softspi.o(i.spi_cmd0)
-    i.spi_cmd0_08_software_reset             0x000015f4   Section        0  spi_cmd.o(i.spi_cmd0_08_software_reset)
-    i.spi_cmd0_09_txfifo_flush               0x000015fa   Section        0  spi_cmd.o(i.spi_cmd0_09_txfifo_flush)
-    i.spi_cmd0_0A_deepsleep                  0x00001600   Section        0  spi_cmd.o(i.spi_cmd0_0A_deepsleep)
-    i.spi_cmd0_0C_lightsleep                 0x00001606   Section        0  spi_cmd.o(i.spi_cmd0_0C_lightsleep)
-    i.spi_cmd0_0E_TX                         0x0000160c   Section        0  spi_cmd.o(i.spi_cmd0_0E_TX)
-    i.spi_cmd0_0F_middlesleep                0x00001612   Section        0  spi_cmd.o(i.spi_cmd0_0F_middlesleep)
-    i.spi_cmd0_20_set_register_bank          0x00001618   Section        0  spi_cmd.o(i.spi_cmd0_20_set_register_bank)
-    i.spi_cmd0_89_rxfifo_flush               0x00001620   Section        0  spi_cmd.o(i.spi_cmd0_89_rxfifo_flush)
-    i.spi_cmdd_10_write_pipe_0_ID            0x00001626   Section        0  softspi.o(i.spi_cmdd_10_write_pipe_0_ID)
-    i.spi_cmdd_11_txfifo_write               0x00001630   Section        0  softspi.o(i.spi_cmdd_11_txfifo_write)
-    i.spi_cmdd_12_write_pipe_1_ID            0x0000169c   Section        0  softspi.o(i.spi_cmdd_12_write_pipe_1_ID)
-    i.spi_cmdd_13_txfifo_write_no_ack        0x000016a8   Section        0  softspi.o(i.spi_cmdd_13_txfifo_write_no_ack)
-    i.spi_cmdd_18_txfifo_prx_w_ack_payload   0x00001714   Section        0  softspi.o(i.spi_cmdd_18_txfifo_prx_w_ack_payload)
-    i.spi_cmdd_90_read_pipe_0_ID             0x00001788   Section        0  softspi.o(i.spi_cmdd_90_read_pipe_0_ID)
-    i.spi_cmdd_92_read_pipe_1_ID             0x00001790   Section        0  softspi.o(i.spi_cmdd_92_read_pipe_1_ID)
-    i.spi_cmdd_BF_rxfifo_read                0x00001798   Section        0  softspi.o(i.spi_cmdd_BF_rxfifo_read)
-    i.spi_octet                              0x00001818   Section        0  softspi.o(i.spi_octet)
-    spi_octet                                0x00001819   Thumb Code    18  softspi.o(i.spi_octet)
-    i.spi_r                                  0x0000182c   Section        0  softspi.o(i.spi_r)
-    i.spi_read_ID                            0x0000188c   Section        0  softspi.o(i.spi_read_ID)
-    spi_read_ID                              0x0000188d   Thumb Code    92  softspi.o(i.spi_read_ID)
-    i.spi_read_fifostatus                    0x000018ec   Section        0  bc5602_host.o(i.spi_read_fifostatus)
-    spi_read_fifostatus                      0x000018ed   Thumb Code     6  bc5602_host.o(i.spi_read_fifostatus)
-    i.spi_read_n_clear_irq1                  0x000018f2   Section        0  bc5602_host.o(i.spi_read_n_clear_irq1)
-    spi_read_n_clear_irq1                    0x000018f3   Thumb Code    24  bc5602_host.o(i.spi_read_n_clear_irq1)
-    i.spi_read_rxfifo_to_spiRxQ              0x0000190c   Section        0  bc5602_host.o(i.spi_read_rxfifo_to_spiRxQ)
-    spi_read_rxfifo_to_spiRxQ                0x0000190d   Thumb Code    24  bc5602_host.o(i.spi_read_rxfifo_to_spiRxQ)
-    i.spi_read_sta1_omst                     0x00001928   Section        0  bc5602_host.o(i.spi_read_sta1_omst)
-    i.spi_w                                  0x0000193c   Section        0  softspi.o(i.spi_w)
-    i.spi_write_ID                           0x00001994   Section        0  softspi.o(i.spi_write_ID)
-    spi_write_ID                             0x00001995   Thumb Code    66  softspi.o(i.spi_write_ID)
-    i.tmr50usGetCurrentTicks                 0x000019dc   Section        0  tmr50us.o(i.tmr50usGetCurrentTicks)
-    i.tmr50usIsExpired                       0x000019e8   Section        0  tmr50us.o(i.tmr50usIsExpired)
-    i.uart_putchar                           0x00001a00   Section        0  usart.o(i.uart_putchar)
-    i.uart_putchar_n                         0x00001a4c   Section        0  usart.o(i.uart_putchar_n)
-    i.uart_puts                              0x00001a62   Section        0  usart.o(i.uart_puts)
-    i.uart_putu16                            0x00001a76   Section        0  usart.o(i.uart_putu16)
-    i.uart_putu8                             0x00001a9c   Section        0  usart.o(i.uart_putu8)
+    i.SPI_SDIO_INPUT_MDOE                    0x00000470   Section        0  softspi.o(i.SPI_SDIO_INPUT_MDOE)
+    i.SPI_SDIO_OUTPUT_MDOE                   0x000004a8   Section        0  softspi.o(i.SPI_SDIO_OUTPUT_MDOE)
+    i.SPI_SELOutputCmd                       0x000004cc   Section        0  ht32f1655_56_spi.o(i.SPI_SELOutputCmd)
+    i.SVC_Handler                            0x000004e0   Section        0  ht32f165x_it.o(i.SVC_Handler)
+    i.SysTick_Handler                        0x000004e2   Section        0  ht32f165x_it.o(i.SysTick_Handler)
+    i.SystemInit                             0x000004e4   Section        0  system_ht32f165x.o(i.SystemInit)
+    i.UART0_IRQHandler                       0x00000544   Section        0  ht32f165x_it.o(i.UART0_IRQHandler)
+    i.USART_FIFOReset                        0x000005e0   Section        0  ht32f1655_56_usart.o(i.USART_FIFOReset)
+    i.USART_Init                             0x000005e8   Section        0  ht32f1655_56_usart.o(i.USART_Init)
+    i.USART_IntConfig                        0x0000061c   Section        0  ht32f1655_56_usart.o(i.USART_IntConfig)
+    i.USART_Interrupt_Init                   0x0000062c   Section        0  ht32f165x_it.o(i.USART_Interrupt_Init)
+    i.USART_RFITLConfig                      0x000006d8   Section        0  ht32f1655_56_usart.o(i.USART_RFITLConfig)
+    i.USART_ReceiveData                      0x000006e4   Section        0  ht32f1655_56_usart.o(i.USART_ReceiveData)
+    i.USART_RxCmd                            0x000006ea   Section        0  ht32f1655_56_usart.o(i.USART_RxCmd)
+    i.USART_SendData                         0x000006fe   Section        0  ht32f1655_56_usart.o(i.USART_SendData)
+    i.USART_TFITLConfig                      0x00000702   Section        0  ht32f1655_56_usart.o(i.USART_TFITLConfig)
+    i.USART_TxCmd                            0x0000070e   Section        0  ht32f1655_56_usart.o(i.USART_TxCmd)
+    i.UsageFault_Handler                     0x00000722   Section        0  ht32f165x_it.o(i.UsageFault_Handler)
+    i.__scatterload_copy                     0x00000724   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x00000732   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00000734   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.callback_spiRxQ_process_at_hfsm2       0x00000744   Section        0  bc5602_host2.o(i.callback_spiRxQ_process_at_hfsm2)
+    i.change_syncword_ptxPipe0_to_prxPipeYouwant 0x000007a0   Section        0  bc5602_host.o(i.change_syncword_ptxPipe0_to_prxPipeYouwant)
+    change_syncword_ptxPipe0_to_prxPipeYouwant 0x000007a1   Thumb Code    64  bc5602_host.o(i.change_syncword_ptxPipe0_to_prxPipeYouwant)
+    i.debug_rxpackets_from_ptx_not_consecutive 0x000007e4   Section        0  bc5602_host.o(i.debug_rxpackets_from_ptx_not_consecutive)
+    debug_rxpackets_from_ptx_not_consecutive 0x000007e5   Thumb Code    90  bc5602_host.o(i.debug_rxpackets_from_ptx_not_consecutive)
+    i.delay_unit_50us                        0x00000884   Section        0  tmr50us.o(i.delay_unit_50us)
+    i.entry_hfsm1_prx                        0x000008a0   Section        0  bc5602_host.o(i.entry_hfsm1_prx)
+    i.host5602_fsm1                          0x000008b0   Section        0  bc5602_host.o(i.host5602_fsm1)
+    host5602_fsm1                            0x000008b1   Thumb Code    90  bc5602_host.o(i.host5602_fsm1)
+    i.host5602_fsm1_prx                      0x0000093c   Section        0  bc5602_host.o(i.host5602_fsm1_prx)
+    host5602_fsm1_prx                        0x0000093d   Thumb Code   290  bc5602_host.o(i.host5602_fsm1_prx)
+    i.host5602_fsm1_ptx                      0x00000a90   Section        0  bc5602_host.o(i.host5602_fsm1_ptx)
+    host5602_fsm1_ptx                        0x00000a91   Thumb Code   584  bc5602_host.o(i.host5602_fsm1_ptx)
+    i.host5602_fsm2                          0x00000d20   Section        0  bc5602_host2.o(i.host5602_fsm2)
+    i.host5602_process                       0x00000d48   Section        0  bc5602_host.o(i.host5602_process)
+    i.init_5603_v4_sz_ic_20230615            0x00000d88   Section        0  bc5602_host.o(i.init_5603_v4_sz_ic_20230615)
+    init_5603_v4_sz_ic_20230615              0x00000d89   Thumb Code   844  bc5602_host.o(i.init_5603_v4_sz_ic_20230615)
+    i.init_mcu                               0x000010e0   Section        0  bc5602_host.o(i.init_mcu)
+    init_mcu                                 0x000010e1   Thumb Code   108  bc5602_host.o(i.init_mcu)
+    i.init_softspi                           0x00001154   Section        0  softspi.o(i.init_softspi)
+    i.init_syncID                            0x00001158   Section        0  bc5602_host.o(i.init_syncID)
+    init_syncID                              0x00001159   Thumb Code   146  bc5602_host.o(i.init_syncID)
+    i.lownibble_to_ascii                     0x00001218   Section        0  usart.o(i.lownibble_to_ascii)
+    lownibble_to_ascii                       0x00001219   Thumb Code    18  usart.o(i.lownibble_to_ascii)
+    i.main                                   0x0000122c   Section        0  main.o(i.main)
+    i.movedata_spiTxQ_to_ptx_txfifo          0x00001314   Section        0  bc5602_host.o(i.movedata_spiTxQ_to_ptx_txfifo)
+    i.movedata_to_spiTxQ                     0x00001340   Section        0  bc5602_host.o(i.movedata_to_spiTxQ)
+    i.movedata_to_spiTxQ___prx               0x00001368   Section        0  bc5602_host2.o(i.movedata_to_spiTxQ___prx)
+    i.movedata_to_spiTxQ___ptx               0x000013ac   Section        0  bc5602_host2.o(i.movedata_to_spiTxQ___ptx)
+    i.pd012346_as_outputmode                 0x00001404   Section        0  softspi.o(i.pd012346_as_outputmode)
+    pd012346_as_outputmode                   0x00001405   Thumb Code   152  softspi.o(i.pd012346_as_outputmode)
+    i.prx_process_possible_rxdr_before_roleswitch_to_ptx 0x000014a0   Section        0  bc5602_host.o(i.prx_process_possible_rxdr_before_roleswitch_to_ptx)
+    prx_process_possible_rxdr_before_roleswitch_to_ptx 0x000014a1   Thumb Code    76  bc5602_host.o(i.prx_process_possible_rxdr_before_roleswitch_to_ptx)
+    i.set_PE_OUTPUT_MDOE                     0x00001508   Section        0  bc5602_host.o(i.set_PE_OUTPUT_MDOE)
+    i.spi_clear_irq1                         0x00001604   Section        0  bc5602_host.o(i.spi_clear_irq1)
+    spi_clear_irq1                           0x00001605   Thumb Code     8  bc5602_host.o(i.spi_clear_irq1)
+    i.spi_cmd0                               0x0000160c   Section        0  softspi.o(i.spi_cmd0)
+    i.spi_cmd0_08_software_reset             0x000016c0   Section        0  spi_cmd.o(i.spi_cmd0_08_software_reset)
+    i.spi_cmd0_09_txfifo_flush               0x000016c6   Section        0  spi_cmd.o(i.spi_cmd0_09_txfifo_flush)
+    i.spi_cmd0_0A_deepsleep                  0x000016cc   Section        0  spi_cmd.o(i.spi_cmd0_0A_deepsleep)
+    i.spi_cmd0_0C_lightsleep                 0x000016d2   Section        0  spi_cmd.o(i.spi_cmd0_0C_lightsleep)
+    i.spi_cmd0_0E_TX                         0x000016d8   Section        0  spi_cmd.o(i.spi_cmd0_0E_TX)
+    i.spi_cmd0_0F_middlesleep                0x000016de   Section        0  spi_cmd.o(i.spi_cmd0_0F_middlesleep)
+    i.spi_cmd0_20_set_register_bank          0x000016e4   Section        0  spi_cmd.o(i.spi_cmd0_20_set_register_bank)
+    i.spi_cmd0_89_rxfifo_flush               0x000016ec   Section        0  spi_cmd.o(i.spi_cmd0_89_rxfifo_flush)
+    i.spi_cmdd_10_write_pipe_0_ID            0x000016f2   Section        0  softspi.o(i.spi_cmdd_10_write_pipe_0_ID)
+    i.spi_cmdd_11_txfifo_write               0x000016fc   Section        0  softspi.o(i.spi_cmdd_11_txfifo_write)
+    i.spi_cmdd_12_write_pipe_1_ID            0x00001768   Section        0  softspi.o(i.spi_cmdd_12_write_pipe_1_ID)
+    i.spi_cmdd_13_txfifo_write_no_ack        0x00001774   Section        0  softspi.o(i.spi_cmdd_13_txfifo_write_no_ack)
+    i.spi_cmdd_18_txfifo_prx_w_ack_payload   0x000017e0   Section        0  softspi.o(i.spi_cmdd_18_txfifo_prx_w_ack_payload)
+    i.spi_cmdd_90_read_pipe_0_ID             0x00001854   Section        0  softspi.o(i.spi_cmdd_90_read_pipe_0_ID)
+    i.spi_cmdd_92_read_pipe_1_ID             0x0000185c   Section        0  softspi.o(i.spi_cmdd_92_read_pipe_1_ID)
+    i.spi_cmdd_BF_rxfifo_read                0x00001864   Section        0  softspi.o(i.spi_cmdd_BF_rxfifo_read)
+    i.spi_octet                              0x000019b4   Section        0  softspi.o(i.spi_octet)
+    spi_octet                                0x000019b5   Thumb Code   126  softspi.o(i.spi_octet)
+    i.spi_r                                  0x00001a38   Section        0  softspi.o(i.spi_r)
+    i.spi_read_ID                            0x00001b40   Section        0  softspi.o(i.spi_read_ID)
+    spi_read_ID                              0x00001b41   Thumb Code    86  softspi.o(i.spi_read_ID)
+    i.spi_read_ID_foo                        0x00001b9c   Section        0  softspi.o(i.spi_read_ID_foo)
+    spi_read_ID_foo                          0x00001b9d   Thumb Code    54  softspi.o(i.spi_read_ID_foo)
+    i.spi_read_fifostatus                    0x00001bd8   Section        0  bc5602_host.o(i.spi_read_fifostatus)
+    spi_read_fifostatus                      0x00001bd9   Thumb Code     6  bc5602_host.o(i.spi_read_fifostatus)
+    i.spi_read_n_clear_irq1                  0x00001bde   Section        0  bc5602_host.o(i.spi_read_n_clear_irq1)
+    spi_read_n_clear_irq1                    0x00001bdf   Thumb Code    24  bc5602_host.o(i.spi_read_n_clear_irq1)
+    i.spi_read_rxfifo_to_spiRxQ              0x00001bf8   Section        0  bc5602_host.o(i.spi_read_rxfifo_to_spiRxQ)
+    spi_read_rxfifo_to_spiRxQ                0x00001bf9   Thumb Code    24  bc5602_host.o(i.spi_read_rxfifo_to_spiRxQ)
+    i.spi_read_sta1_omst                     0x00001c14   Section        0  bc5602_host.o(i.spi_read_sta1_omst)
+    i.spi_w                                  0x00001c28   Section        0  softspi.o(i.spi_w)
+    i.spi_write_ID                           0x00001c80   Section        0  softspi.o(i.spi_write_ID)
+    spi_write_ID                             0x00001c81   Thumb Code    66  softspi.o(i.spi_write_ID)
+    i.tmr50usGetCurrentTicks                 0x00001cc8   Section        0  tmr50us.o(i.tmr50usGetCurrentTicks)
+    i.tmr50usIsExpired                       0x00001cd4   Section        0  tmr50us.o(i.tmr50usIsExpired)
+    i.uart_putchar                           0x00001cec   Section        0  usart.o(i.uart_putchar)
+    i.uart_putchar_n                         0x00001d38   Section        0  usart.o(i.uart_putchar_n)
+    i.uart_puts                              0x00001d4e   Section        0  usart.o(i.uart_puts)
+    i.uart_putu16                            0x00001d62   Section        0  usart.o(i.uart_putu16)
+    i.uart_putu8                             0x00001d88   Section        0  usart.o(i.uart_putu8)
     .data                                    0x20000000   Section        8  usart.o(.data)
     .data                                    0x20000008   Section        4  usart.o(.data)
     .data                                    0x2000000c   Section        4  usart.o(.data)
@@ -1641,66 +1660,68 @@ Image Symbol Table
     PendSV_Handler                           0x00000411   Thumb Code     2  ht32f165x_it.o(i.PendSV_Handler)
     SPI_Cmd                                  0x00000413   Thumb Code    20  ht32f1655_56_spi.o(i.SPI_Cmd)
     SPI_Init                                 0x00000427   Thumb Code    74  ht32f1655_56_spi.o(i.SPI_Init)
-    SPI_SELOutputCmd                         0x00000471   Thumb Code    20  ht32f1655_56_spi.o(i.SPI_SELOutputCmd)
-    SVC_Handler                              0x00000485   Thumb Code     2  ht32f165x_it.o(i.SVC_Handler)
-    SysTick_Handler                          0x00000487   Thumb Code     2  ht32f165x_it.o(i.SysTick_Handler)
-    SystemInit                               0x00000489   Thumb Code    82  system_ht32f165x.o(i.SystemInit)
-    UART0_IRQHandler                         0x000004e9   Thumb Code   126  ht32f165x_it.o(i.UART0_IRQHandler)
-    USART_FIFOReset                          0x00000585   Thumb Code     8  ht32f1655_56_usart.o(i.USART_FIFOReset)
-    USART_Init                               0x0000058d   Thumb Code    52  ht32f1655_56_usart.o(i.USART_Init)
-    USART_IntConfig                          0x000005c1   Thumb Code    16  ht32f1655_56_usart.o(i.USART_IntConfig)
-    USART_Interrupt_Init                     0x000005d1   Thumb Code   158  ht32f165x_it.o(i.USART_Interrupt_Init)
-    USART_RFITLConfig                        0x0000067d   Thumb Code    12  ht32f1655_56_usart.o(i.USART_RFITLConfig)
-    USART_ReceiveData                        0x00000689   Thumb Code     6  ht32f1655_56_usart.o(i.USART_ReceiveData)
-    USART_RxCmd                              0x0000068f   Thumb Code    20  ht32f1655_56_usart.o(i.USART_RxCmd)
-    USART_SendData                           0x000006a3   Thumb Code     4  ht32f1655_56_usart.o(i.USART_SendData)
-    USART_TFITLConfig                        0x000006a7   Thumb Code    12  ht32f1655_56_usart.o(i.USART_TFITLConfig)
-    USART_TxCmd                              0x000006b3   Thumb Code    20  ht32f1655_56_usart.o(i.USART_TxCmd)
-    UsageFault_Handler                       0x000006c7   Thumb Code     2  ht32f165x_it.o(i.UsageFault_Handler)
-    __scatterload_copy                       0x000006c9   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x000006d7   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x000006d9   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    callback_spiRxQ_process_at_hfsm2         0x000006e9   Thumb Code    56  bc5602_host2.o(i.callback_spiRxQ_process_at_hfsm2)
-    delay_unit_50us                          0x00000829   Thumb Code    24  tmr50us.o(i.delay_unit_50us)
-    entry_hfsm1_prx                          0x00000845   Thumb Code    12  bc5602_host.o(i.entry_hfsm1_prx)
-    host5602_fsm2                            0x00000cc5   Thumb Code    30  bc5602_host2.o(i.host5602_fsm2)
-    host5602_process                         0x00000ced   Thumb Code    56  bc5602_host.o(i.host5602_process)
-    init_softspi                             0x000010f5   Thumb Code     4  softspi.o(i.init_softspi)
-    main                                     0x000011cd   Thumb Code   208  main.o(i.main)
-    movedata_spiTxQ_to_ptx_txfifo            0x000012b5   Thumb Code    38  bc5602_host.o(i.movedata_spiTxQ_to_ptx_txfifo)
-    movedata_to_spiTxQ                       0x000012e1   Thumb Code    34  bc5602_host.o(i.movedata_to_spiTxQ)
-    movedata_to_spiTxQ___prx                 0x00001309   Thumb Code    62  bc5602_host2.o(i.movedata_to_spiTxQ___prx)
-    movedata_to_spiTxQ___ptx                 0x0000134d   Thumb Code    82  bc5602_host2.o(i.movedata_to_spiTxQ___ptx)
-    set_PE_OUTPUT_MDOE                       0x000014a9   Thumb Code   248  bc5602_host.o(i.set_PE_OUTPUT_MDOE)
-    spi_cmd0                                 0x000015ad   Thumb Code    62  softspi.o(i.spi_cmd0)
-    spi_cmd0_08_software_reset               0x000015f5   Thumb Code     6  spi_cmd.o(i.spi_cmd0_08_software_reset)
-    spi_cmd0_09_txfifo_flush                 0x000015fb   Thumb Code     6  spi_cmd.o(i.spi_cmd0_09_txfifo_flush)
-    spi_cmd0_0A_deepsleep                    0x00001601   Thumb Code     6  spi_cmd.o(i.spi_cmd0_0A_deepsleep)
-    spi_cmd0_0C_lightsleep                   0x00001607   Thumb Code     6  spi_cmd.o(i.spi_cmd0_0C_lightsleep)
-    spi_cmd0_0E_TX                           0x0000160d   Thumb Code     6  spi_cmd.o(i.spi_cmd0_0E_TX)
-    spi_cmd0_0F_middlesleep                  0x00001613   Thumb Code     6  spi_cmd.o(i.spi_cmd0_0F_middlesleep)
-    spi_cmd0_20_set_register_bank            0x00001619   Thumb Code     8  spi_cmd.o(i.spi_cmd0_20_set_register_bank)
-    spi_cmd0_89_rxfifo_flush                 0x00001621   Thumb Code     6  spi_cmd.o(i.spi_cmd0_89_rxfifo_flush)
-    spi_cmdd_10_write_pipe_0_ID              0x00001627   Thumb Code    10  softspi.o(i.spi_cmdd_10_write_pipe_0_ID)
-    spi_cmdd_11_txfifo_write                 0x00001631   Thumb Code    98  softspi.o(i.spi_cmdd_11_txfifo_write)
-    spi_cmdd_12_write_pipe_1_ID              0x0000169d   Thumb Code    10  softspi.o(i.spi_cmdd_12_write_pipe_1_ID)
-    spi_cmdd_13_txfifo_write_no_ack          0x000016a9   Thumb Code    98  softspi.o(i.spi_cmdd_13_txfifo_write_no_ack)
-    spi_cmdd_18_txfifo_prx_w_ack_payload     0x00001715   Thumb Code   108  softspi.o(i.spi_cmdd_18_txfifo_prx_w_ack_payload)
-    spi_cmdd_90_read_pipe_0_ID               0x00001789   Thumb Code     8  softspi.o(i.spi_cmdd_90_read_pipe_0_ID)
-    spi_cmdd_92_read_pipe_1_ID               0x00001791   Thumb Code     8  softspi.o(i.spi_cmdd_92_read_pipe_1_ID)
-    spi_cmdd_BF_rxfifo_read                  0x00001799   Thumb Code   120  softspi.o(i.spi_cmdd_BF_rxfifo_read)
-    spi_r                                    0x0000182d   Thumb Code    86  softspi.o(i.spi_r)
-    spi_read_sta1_omst                       0x00001929   Thumb Code    18  bc5602_host.o(i.spi_read_sta1_omst)
-    spi_w                                    0x0000193d   Thumb Code    78  softspi.o(i.spi_w)
-    tmr50usGetCurrentTicks                   0x000019dd   Thumb Code     6  tmr50us.o(i.tmr50usGetCurrentTicks)
-    tmr50usIsExpired                         0x000019e9   Thumb Code    20  tmr50us.o(i.tmr50usIsExpired)
-    uart_putchar                             0x00001a01   Thumb Code    64  usart.o(i.uart_putchar)
-    uart_putchar_n                           0x00001a4d   Thumb Code    22  usart.o(i.uart_putchar_n)
-    uart_puts                                0x00001a63   Thumb Code    20  usart.o(i.uart_puts)
-    uart_putu16                              0x00001a77   Thumb Code    38  usart.o(i.uart_putu16)
-    uart_putu8                               0x00001a9d   Thumb Code    20  usart.o(i.uart_putu8)
-    Region$$Table$$Base                      0x00001ab0   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00001ad0   Number         0  anon$$obj.o(Region$$Table)
+    SPI_SDIO_INPUT_MDOE                      0x00000471   Thumb Code    50  softspi.o(i.SPI_SDIO_INPUT_MDOE)
+    SPI_SDIO_OUTPUT_MDOE                     0x000004a9   Thumb Code    30  softspi.o(i.SPI_SDIO_OUTPUT_MDOE)
+    SPI_SELOutputCmd                         0x000004cd   Thumb Code    20  ht32f1655_56_spi.o(i.SPI_SELOutputCmd)
+    SVC_Handler                              0x000004e1   Thumb Code     2  ht32f165x_it.o(i.SVC_Handler)
+    SysTick_Handler                          0x000004e3   Thumb Code     2  ht32f165x_it.o(i.SysTick_Handler)
+    SystemInit                               0x000004e5   Thumb Code    82  system_ht32f165x.o(i.SystemInit)
+    UART0_IRQHandler                         0x00000545   Thumb Code   126  ht32f165x_it.o(i.UART0_IRQHandler)
+    USART_FIFOReset                          0x000005e1   Thumb Code     8  ht32f1655_56_usart.o(i.USART_FIFOReset)
+    USART_Init                               0x000005e9   Thumb Code    52  ht32f1655_56_usart.o(i.USART_Init)
+    USART_IntConfig                          0x0000061d   Thumb Code    16  ht32f1655_56_usart.o(i.USART_IntConfig)
+    USART_Interrupt_Init                     0x0000062d   Thumb Code   158  ht32f165x_it.o(i.USART_Interrupt_Init)
+    USART_RFITLConfig                        0x000006d9   Thumb Code    12  ht32f1655_56_usart.o(i.USART_RFITLConfig)
+    USART_ReceiveData                        0x000006e5   Thumb Code     6  ht32f1655_56_usart.o(i.USART_ReceiveData)
+    USART_RxCmd                              0x000006eb   Thumb Code    20  ht32f1655_56_usart.o(i.USART_RxCmd)
+    USART_SendData                           0x000006ff   Thumb Code     4  ht32f1655_56_usart.o(i.USART_SendData)
+    USART_TFITLConfig                        0x00000703   Thumb Code    12  ht32f1655_56_usart.o(i.USART_TFITLConfig)
+    USART_TxCmd                              0x0000070f   Thumb Code    20  ht32f1655_56_usart.o(i.USART_TxCmd)
+    UsageFault_Handler                       0x00000723   Thumb Code     2  ht32f165x_it.o(i.UsageFault_Handler)
+    __scatterload_copy                       0x00000725   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x00000733   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00000735   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    callback_spiRxQ_process_at_hfsm2         0x00000745   Thumb Code    56  bc5602_host2.o(i.callback_spiRxQ_process_at_hfsm2)
+    delay_unit_50us                          0x00000885   Thumb Code    24  tmr50us.o(i.delay_unit_50us)
+    entry_hfsm1_prx                          0x000008a1   Thumb Code    12  bc5602_host.o(i.entry_hfsm1_prx)
+    host5602_fsm2                            0x00000d21   Thumb Code    30  bc5602_host2.o(i.host5602_fsm2)
+    host5602_process                         0x00000d49   Thumb Code    58  bc5602_host.o(i.host5602_process)
+    init_softspi                             0x00001155   Thumb Code     4  softspi.o(i.init_softspi)
+    main                                     0x0000122d   Thumb Code   208  main.o(i.main)
+    movedata_spiTxQ_to_ptx_txfifo            0x00001315   Thumb Code    38  bc5602_host.o(i.movedata_spiTxQ_to_ptx_txfifo)
+    movedata_to_spiTxQ                       0x00001341   Thumb Code    34  bc5602_host.o(i.movedata_to_spiTxQ)
+    movedata_to_spiTxQ___prx                 0x00001369   Thumb Code    62  bc5602_host2.o(i.movedata_to_spiTxQ___prx)
+    movedata_to_spiTxQ___ptx                 0x000013ad   Thumb Code    82  bc5602_host2.o(i.movedata_to_spiTxQ___ptx)
+    set_PE_OUTPUT_MDOE                       0x00001509   Thumb Code   248  bc5602_host.o(i.set_PE_OUTPUT_MDOE)
+    spi_cmd0                                 0x0000160d   Thumb Code   170  softspi.o(i.spi_cmd0)
+    spi_cmd0_08_software_reset               0x000016c1   Thumb Code     6  spi_cmd.o(i.spi_cmd0_08_software_reset)
+    spi_cmd0_09_txfifo_flush                 0x000016c7   Thumb Code     6  spi_cmd.o(i.spi_cmd0_09_txfifo_flush)
+    spi_cmd0_0A_deepsleep                    0x000016cd   Thumb Code     6  spi_cmd.o(i.spi_cmd0_0A_deepsleep)
+    spi_cmd0_0C_lightsleep                   0x000016d3   Thumb Code     6  spi_cmd.o(i.spi_cmd0_0C_lightsleep)
+    spi_cmd0_0E_TX                           0x000016d9   Thumb Code     6  spi_cmd.o(i.spi_cmd0_0E_TX)
+    spi_cmd0_0F_middlesleep                  0x000016df   Thumb Code     6  spi_cmd.o(i.spi_cmd0_0F_middlesleep)
+    spi_cmd0_20_set_register_bank            0x000016e5   Thumb Code     8  spi_cmd.o(i.spi_cmd0_20_set_register_bank)
+    spi_cmd0_89_rxfifo_flush                 0x000016ed   Thumb Code     6  spi_cmd.o(i.spi_cmd0_89_rxfifo_flush)
+    spi_cmdd_10_write_pipe_0_ID              0x000016f3   Thumb Code    10  softspi.o(i.spi_cmdd_10_write_pipe_0_ID)
+    spi_cmdd_11_txfifo_write                 0x000016fd   Thumb Code    98  softspi.o(i.spi_cmdd_11_txfifo_write)
+    spi_cmdd_12_write_pipe_1_ID              0x00001769   Thumb Code    10  softspi.o(i.spi_cmdd_12_write_pipe_1_ID)
+    spi_cmdd_13_txfifo_write_no_ack          0x00001775   Thumb Code    98  softspi.o(i.spi_cmdd_13_txfifo_write_no_ack)
+    spi_cmdd_18_txfifo_prx_w_ack_payload     0x000017e1   Thumb Code   108  softspi.o(i.spi_cmdd_18_txfifo_prx_w_ack_payload)
+    spi_cmdd_90_read_pipe_0_ID               0x00001855   Thumb Code     8  softspi.o(i.spi_cmdd_90_read_pipe_0_ID)
+    spi_cmdd_92_read_pipe_1_ID               0x0000185d   Thumb Code     8  softspi.o(i.spi_cmdd_92_read_pipe_1_ID)
+    spi_cmdd_BF_rxfifo_read                  0x00001865   Thumb Code   326  softspi.o(i.spi_cmdd_BF_rxfifo_read)
+    spi_r                                    0x00001a39   Thumb Code   256  softspi.o(i.spi_r)
+    spi_read_sta1_omst                       0x00001c15   Thumb Code    18  bc5602_host.o(i.spi_read_sta1_omst)
+    spi_w                                    0x00001c29   Thumb Code    78  softspi.o(i.spi_w)
+    tmr50usGetCurrentTicks                   0x00001cc9   Thumb Code     6  tmr50us.o(i.tmr50usGetCurrentTicks)
+    tmr50usIsExpired                         0x00001cd5   Thumb Code    20  tmr50us.o(i.tmr50usIsExpired)
+    uart_putchar                             0x00001ced   Thumb Code    64  usart.o(i.uart_putchar)
+    uart_putchar_n                           0x00001d39   Thumb Code    22  usart.o(i.uart_putchar_n)
+    uart_puts                                0x00001d4f   Thumb Code    20  usart.o(i.uart_puts)
+    uart_putu16                              0x00001d63   Thumb Code    38  usart.o(i.uart_putu16)
+    uart_putu8                               0x00001d89   Thumb Code    20  usart.o(i.uart_putu8)
+    Region$$Table$$Base                      0x00001d9c   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00001dbc   Number         0  anon$$obj.o(Region$$Table)
     UR0TxReadIndex                           0x20000000   Data           4  usart.o(.data)
     UR0TxWriteIndex                          0x20000004   Data           4  usart.o(.data)
     UR0RxReadIndex                           0x20000008   Data           4  usart.o(.data)
@@ -1725,161 +1746,163 @@ Memory Map of the image
 
   Image Entry point : 0x00000155
 
-  Load Region LR_1 (Base: 0x00000000, Size: 0x00001b44, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00001e30, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00001ad0, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00001dbc, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x00000000   0x00000000   0x00000178   Code   RO         1076  * RESET               startup_ht32f165x.o
-    0x00000178   0x00000178   0x00000000   Code   RO         5120  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x00000178   0x00000178   0x00000004   Code   RO         5123    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x0000017c   0x0000017c   0x00000004   Code   RO         5126    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x00000180   0x00000180   0x00000000   Code   RO         5128    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x00000180   0x00000180   0x00000000   Code   RO         5130    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x00000180   0x00000180   0x00000008   Code   RO         5131    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x00000188   0x00000188   0x00000000   Code   RO         5133    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x00000188   0x00000188   0x00000000   Code   RO         5135    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x00000188   0x00000188   0x00000004   Code   RO         5124    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
-    0x0000018c   0x0000018c   0x00000024   Code   RO         5137    .text               mc_w.l(init.o)
-    0x000001b0   0x000001b0   0x00000064   Code   RO         2092    i.AFIO_GPxConfig    ht32f1655_56_gpio.o
+    0x00000000   0x00000000   0x00000178   Code   RO         1077  * RESET               startup_ht32f165x.o
+    0x00000178   0x00000178   0x00000000   Code   RO         5121  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x00000178   0x00000178   0x00000004   Code   RO         5124    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x0000017c   0x0000017c   0x00000004   Code   RO         5127    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x00000180   0x00000180   0x00000000   Code   RO         5129    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x00000180   0x00000180   0x00000000   Code   RO         5131    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x00000180   0x00000180   0x00000008   Code   RO         5132    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x00000188   0x00000188   0x00000000   Code   RO         5134    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x00000188   0x00000188   0x00000000   Code   RO         5136    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x00000188   0x00000188   0x00000004   Code   RO         5125    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x0000018c   0x0000018c   0x00000024   Code   RO         5138    .text               mc_w.l(init.o)
+    0x000001b0   0x000001b0   0x00000064   Code   RO         2093    i.AFIO_GPxConfig    ht32f1655_56_gpio.o
     0x00000214   0x00000214   0x00000018   Code   RO          172    i.BFTM0_IRQHandler  ht32f165x_it.o
-    0x0000022c   0x0000022c   0x0000000e   Code   RO         1382    i.BFTM_ClearFlag    ht32f1655_56_bftm.o
-    0x0000023a   0x0000023a   0x00000014   Code   RO         1384    i.BFTM_EnaCmd       ht32f1655_56_bftm.o
-    0x0000024e   0x0000024e   0x00000014   Code   RO         1388    i.BFTM_IntConfig    ht32f1655_56_bftm.o
-    0x00000262   0x00000262   0x00000004   Code   RO         1390    i.BFTM_SetCompare   ht32f1655_56_bftm.o
-    0x00000266   0x00000266   0x00000004   Code   RO         1391    i.BFTM_SetCounter   ht32f1655_56_bftm.o
+    0x0000022c   0x0000022c   0x0000000e   Code   RO         1383    i.BFTM_ClearFlag    ht32f1655_56_bftm.o
+    0x0000023a   0x0000023a   0x00000014   Code   RO         1385    i.BFTM_EnaCmd       ht32f1655_56_bftm.o
+    0x0000024e   0x0000024e   0x00000014   Code   RO         1389    i.BFTM_IntConfig    ht32f1655_56_bftm.o
+    0x00000262   0x00000262   0x00000004   Code   RO         1391    i.BFTM_SetCompare   ht32f1655_56_bftm.o
+    0x00000266   0x00000266   0x00000004   Code   RO         1392    i.BFTM_SetCounter   ht32f1655_56_bftm.o
     0x0000026a   0x0000026a   0x00000002   Code   RO          173    i.BusFault_Handler  ht32f165x_it.o
-    0x0000026c   0x0000026c   0x00000054   Code   RO         1469    i.CKCU_GetClocksFrequency  ht32f1655_56_ckcu.o
-    0x000002c0   0x000002c0   0x00000040   Code   RO         1471    i.CKCU_GetPLLFrequency  ht32f1655_56_ckcu.o
-    0x00000300   0x00000300   0x00000010   Code   RO         1473    i.CKCU_GetUSARTClockFreq  ht32f1655_56_ckcu.o
-    0x00000310   0x00000310   0x00000024   Code   RO         1484    i.CKCU_PeripClockConfig  ht32f1655_56_ckcu.o
+    0x0000026c   0x0000026c   0x00000054   Code   RO         1470    i.CKCU_GetClocksFrequency  ht32f1655_56_ckcu.o
+    0x000002c0   0x000002c0   0x00000040   Code   RO         1472    i.CKCU_GetPLLFrequency  ht32f1655_56_ckcu.o
+    0x00000300   0x00000300   0x00000010   Code   RO         1474    i.CKCU_GetUSARTClockFreq  ht32f1655_56_ckcu.o
+    0x00000310   0x00000310   0x00000024   Code   RO         1485    i.CKCU_PeripClockConfig  ht32f1655_56_ckcu.o
     0x00000334   0x00000334   0x00000002   Code   RO          174    i.DebugMon_Handler  ht32f165x_it.o
-    0x00000336   0x00000336   0x00000010   Code   RO         2095    i.GPIO_DirectionConfig  ht32f1655_56_gpio.o
+    0x00000336   0x00000336   0x00000010   Code   RO         2096    i.GPIO_DirectionConfig  ht32f1655_56_gpio.o
     0x00000346   0x00000346   0x00000002   PAD
-    0x00000348   0x00000348   0x00000018   Code   RO          730    i.GPIO_IRQ3_IS_RESET  bc5602_host.o
-    0x00000360   0x00000360   0x00000010   Code   RO         2097    i.GPIO_InputConfig  ht32f1655_56_gpio.o
-    0x00000370   0x00000370   0x00000028   Code   RO         2102    i.GPIO_PullResistorConfig  ht32f1655_56_gpio.o
-    0x00000398   0x00000398   0x0000000a   Code   RO         2103    i.GPIO_ReadInBit    ht32f1655_56_gpio.o
-    0x000003a2   0x000003a2   0x0000000a   Code   RO         2108    i.GPIO_WriteOutBits  ht32f1655_56_gpio.o
+    0x00000348   0x00000348   0x00000018   Code   RO          731    i.GPIO_IRQ3_IS_RESET  bc5602_host.o
+    0x00000360   0x00000360   0x00000010   Code   RO         2098    i.GPIO_InputConfig  ht32f1655_56_gpio.o
+    0x00000370   0x00000370   0x00000028   Code   RO         2103    i.GPIO_PullResistorConfig  ht32f1655_56_gpio.o
+    0x00000398   0x00000398   0x0000000a   Code   RO         2104    i.GPIO_ReadInBit    ht32f1655_56_gpio.o
+    0x000003a2   0x000003a2   0x0000000a   Code   RO         2109    i.GPIO_WriteOutBits  ht32f1655_56_gpio.o
     0x000003ac   0x000003ac   0x00000002   Code   RO          175    i.HardFault_Handler  ht32f165x_it.o
     0x000003ae   0x000003ae   0x00000002   Code   RO          176    i.MemManage_Handler  ht32f165x_it.o
     0x000003b0   0x000003b0   0x00000002   Code   RO          177    i.NMI_Handler       ht32f165x_it.o
     0x000003b2   0x000003b2   0x00000016   Code   RO          178    i.NVIC_EnableIRQ    ht32f165x_it.o
-    0x000003c8   0x000003c8   0x00000048   Code   RO         3412    i.PWRCU_CheckReadyAccessed  ht32f1655_56_pwrcu.o
+    0x000003c8   0x000003c8   0x00000048   Code   RO         3413    i.PWRCU_CheckReadyAccessed  ht32f1655_56_pwrcu.o
     0x00000410   0x00000410   0x00000002   Code   RO          179    i.PendSV_Handler    ht32f165x_it.o
-    0x00000412   0x00000412   0x00000014   Code   RO         3873    i.SPI_Cmd           ht32f1655_56_spi.o
-    0x00000426   0x00000426   0x0000004a   Code   RO         3882    i.SPI_Init          ht32f1655_56_spi.o
-    0x00000470   0x00000470   0x00000014   Code   RO         3888    i.SPI_SELOutputCmd  ht32f1655_56_spi.o
-    0x00000484   0x00000484   0x00000002   Code   RO          180    i.SVC_Handler       ht32f165x_it.o
-    0x00000486   0x00000486   0x00000002   Code   RO          181    i.SysTick_Handler   ht32f165x_it.o
-    0x00000488   0x00000488   0x00000060   Code   RO         1042    i.SystemInit        system_ht32f165x.o
-    0x000004e8   0x000004e8   0x0000009c   Code   RO          182    i.UART0_IRQHandler  ht32f165x_it.o
-    0x00000584   0x00000584   0x00000008   Code   RO         4026    i.USART_FIFOReset   ht32f1655_56_usart.o
-    0x0000058c   0x0000058c   0x00000034   Code   RO         4034    i.USART_Init        ht32f1655_56_usart.o
-    0x000005c0   0x000005c0   0x00000010   Code   RO         4035    i.USART_IntConfig   ht32f1655_56_usart.o
-    0x000005d0   0x000005d0   0x000000ac   Code   RO          183    i.USART_Interrupt_Init  ht32f165x_it.o
-    0x0000067c   0x0000067c   0x0000000c   Code   RO         4041    i.USART_RFITLConfig  ht32f1655_56_usart.o
-    0x00000688   0x00000688   0x00000006   Code   RO         4045    i.USART_ReceiveData  ht32f1655_56_usart.o
-    0x0000068e   0x0000068e   0x00000014   Code   RO         4046    i.USART_RxCmd       ht32f1655_56_usart.o
-    0x000006a2   0x000006a2   0x00000004   Code   RO         4048    i.USART_SendData    ht32f1655_56_usart.o
-    0x000006a6   0x000006a6   0x0000000c   Code   RO         4058    i.USART_TFITLConfig  ht32f1655_56_usart.o
-    0x000006b2   0x000006b2   0x00000014   Code   RO         4060    i.USART_TxCmd       ht32f1655_56_usart.o
-    0x000006c6   0x000006c6   0x00000002   Code   RO          184    i.UsageFault_Handler  ht32f165x_it.o
-    0x000006c8   0x000006c8   0x0000000e   Code   RO         5141    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x000006d6   0x000006d6   0x00000002   Code   RO         5142    i.__scatterload_null  mc_w.l(handlers.o)
-    0x000006d8   0x000006d8   0x0000000e   Code   RO         5143    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x000006e6   0x000006e6   0x00000002   PAD
-    0x000006e8   0x000006e8   0x0000005c   Code   RO          902    i.callback_spiRxQ_process_at_hfsm2  bc5602_host2.o
-    0x00000744   0x00000744   0x00000044   Code   RO          732    i.change_syncword_ptxPipe0_to_prxPipeYouwant  bc5602_host.o
-    0x00000788   0x00000788   0x000000a0   Code   RO          733    i.debug_rxpackets_from_ptx_not_consecutive  bc5602_host.o
-    0x00000828   0x00000828   0x0000001c   Code   RO          465    i.delay_unit_50us   tmr50us.o
-    0x00000844   0x00000844   0x00000010   Code   RO          734    i.entry_hfsm1_prx   bc5602_host.o
-    0x00000854   0x00000854   0x0000008c   Code   RO          738    i.host5602_fsm1     bc5602_host.o
-    0x000008e0   0x000008e0   0x00000154   Code   RO          739    i.host5602_fsm1_prx  bc5602_host.o
-    0x00000a34   0x00000a34   0x00000290   Code   RO          740    i.host5602_fsm1_ptx  bc5602_host.o
-    0x00000cc4   0x00000cc4   0x00000028   Code   RO          903    i.host5602_fsm2     bc5602_host2.o
-    0x00000cec   0x00000cec   0x0000003c   Code   RO          741    i.host5602_process  bc5602_host.o
-    0x00000d28   0x00000d28   0x00000358   Code   RO          742    i.init_5603_v4_sz_ic_20230615  bc5602_host.o
-    0x00001080   0x00001080   0x00000074   Code   RO          743    i.init_mcu          bc5602_host.o
-    0x000010f4   0x000010f4   0x00000004   Code   RO          509    i.init_softspi      softspi.o
-    0x000010f8   0x000010f8   0x000000c0   Code   RO          744    i.init_syncID       bc5602_host.o
-    0x000011b8   0x000011b8   0x00000012   Code   RO          398    i.lownibble_to_ascii  usart.o
-    0x000011ca   0x000011ca   0x00000002   PAD
-    0x000011cc   0x000011cc   0x000000e8   Code   RO            4    i.main              main.o
-    0x000012b4   0x000012b4   0x0000002c   Code   RO          745    i.movedata_spiTxQ_to_ptx_txfifo  bc5602_host.o
-    0x000012e0   0x000012e0   0x00000028   Code   RO          746    i.movedata_to_spiTxQ  bc5602_host.o
-    0x00001308   0x00001308   0x00000044   Code   RO          904    i.movedata_to_spiTxQ___prx  bc5602_host2.o
-    0x0000134c   0x0000134c   0x00000058   Code   RO          905    i.movedata_to_spiTxQ___ptx  bc5602_host2.o
-    0x000013a4   0x000013a4   0x0000009c   Code   RO          510    i.pd012346_as_outputmode  softspi.o
-    0x00001440   0x00001440   0x00000068   Code   RO          747    i.prx_process_possible_rxdr_before_roleswitch_to_ptx  bc5602_host.o
-    0x000014a8   0x000014a8   0x000000fc   Code   RO          748    i.set_PE_OUTPUT_MDOE  bc5602_host.o
-    0x000015a4   0x000015a4   0x00000008   Code   RO          749    i.spi_clear_irq1    bc5602_host.o
-    0x000015ac   0x000015ac   0x00000048   Code   RO          511    i.spi_cmd0          softspi.o
-    0x000015f4   0x000015f4   0x00000006   Code   RO          648    i.spi_cmd0_08_software_reset  spi_cmd.o
-    0x000015fa   0x000015fa   0x00000006   Code   RO          649    i.spi_cmd0_09_txfifo_flush  spi_cmd.o
-    0x00001600   0x00001600   0x00000006   Code   RO          650    i.spi_cmd0_0A_deepsleep  spi_cmd.o
-    0x00001606   0x00001606   0x00000006   Code   RO          651    i.spi_cmd0_0C_lightsleep  spi_cmd.o
-    0x0000160c   0x0000160c   0x00000006   Code   RO          652    i.spi_cmd0_0E_TX    spi_cmd.o
-    0x00001612   0x00001612   0x00000006   Code   RO          653    i.spi_cmd0_0F_middlesleep  spi_cmd.o
-    0x00001618   0x00001618   0x00000008   Code   RO          654    i.spi_cmd0_20_set_register_bank  spi_cmd.o
-    0x00001620   0x00001620   0x00000006   Code   RO          656    i.spi_cmd0_89_rxfifo_flush  spi_cmd.o
-    0x00001626   0x00001626   0x0000000a   Code   RO          512    i.spi_cmdd_10_write_pipe_0_ID  softspi.o
-    0x00001630   0x00001630   0x0000006c   Code   RO          513    i.spi_cmdd_11_txfifo_write  softspi.o
-    0x0000169c   0x0000169c   0x0000000a   Code   RO          514    i.spi_cmdd_12_write_pipe_1_ID  softspi.o
-    0x000016a6   0x000016a6   0x00000002   PAD
-    0x000016a8   0x000016a8   0x0000006c   Code   RO          515    i.spi_cmdd_13_txfifo_write_no_ack  softspi.o
-    0x00001714   0x00001714   0x00000074   Code   RO          516    i.spi_cmdd_18_txfifo_prx_w_ack_payload  softspi.o
-    0x00001788   0x00001788   0x00000008   Code   RO          517    i.spi_cmdd_90_read_pipe_0_ID  softspi.o
-    0x00001790   0x00001790   0x00000008   Code   RO          518    i.spi_cmdd_92_read_pipe_1_ID  softspi.o
-    0x00001798   0x00001798   0x00000080   Code   RO          520    i.spi_cmdd_BF_rxfifo_read  softspi.o
-    0x00001818   0x00001818   0x00000012   Code   RO          521    i.spi_octet         softspi.o
-    0x0000182a   0x0000182a   0x00000002   PAD
-    0x0000182c   0x0000182c   0x00000060   Code   RO          522    i.spi_r             softspi.o
-    0x0000188c   0x0000188c   0x00000060   Code   RO          523    i.spi_read_ID       softspi.o
-    0x000018ec   0x000018ec   0x00000006   Code   RO          750    i.spi_read_fifostatus  bc5602_host.o
-    0x000018f2   0x000018f2   0x00000018   Code   RO          751    i.spi_read_n_clear_irq1  bc5602_host.o
-    0x0000190a   0x0000190a   0x00000002   PAD
-    0x0000190c   0x0000190c   0x0000001c   Code   RO          752    i.spi_read_rxfifo_to_spiRxQ  bc5602_host.o
-    0x00001928   0x00001928   0x00000012   Code   RO          753    i.spi_read_sta1_omst  bc5602_host.o
-    0x0000193a   0x0000193a   0x00000002   PAD
-    0x0000193c   0x0000193c   0x00000058   Code   RO          524    i.spi_w             softspi.o
-    0x00001994   0x00001994   0x00000048   Code   RO          525    i.spi_write_ID      softspi.o
-    0x000019dc   0x000019dc   0x0000000c   Code   RO          466    i.tmr50usGetCurrentTicks  tmr50us.o
-    0x000019e8   0x000019e8   0x00000018   Code   RO          467    i.tmr50usIsExpired  tmr50us.o
-    0x00001a00   0x00001a00   0x0000004c   Code   RO          399    i.uart_putchar      usart.o
-    0x00001a4c   0x00001a4c   0x00000016   Code   RO          400    i.uart_putchar_n    usart.o
-    0x00001a62   0x00001a62   0x00000014   Code   RO          401    i.uart_puts         usart.o
-    0x00001a76   0x00001a76   0x00000026   Code   RO          402    i.uart_putu16       usart.o
-    0x00001a9c   0x00001a9c   0x00000014   Code   RO          403    i.uart_putu8        usart.o
-    0x00001ab0   0x00001ab0   0x00000020   Data   RO         5139    Region$$Table       anon$$obj.o
+    0x00000412   0x00000412   0x00000014   Code   RO         3874    i.SPI_Cmd           ht32f1655_56_spi.o
+    0x00000426   0x00000426   0x0000004a   Code   RO         3883    i.SPI_Init          ht32f1655_56_spi.o
+    0x00000470   0x00000470   0x00000038   Code   RO          506    i.SPI_SDIO_INPUT_MDOE  softspi.o
+    0x000004a8   0x000004a8   0x00000024   Code   RO          507    i.SPI_SDIO_OUTPUT_MDOE  softspi.o
+    0x000004cc   0x000004cc   0x00000014   Code   RO         3889    i.SPI_SELOutputCmd  ht32f1655_56_spi.o
+    0x000004e0   0x000004e0   0x00000002   Code   RO          180    i.SVC_Handler       ht32f165x_it.o
+    0x000004e2   0x000004e2   0x00000002   Code   RO          181    i.SysTick_Handler   ht32f165x_it.o
+    0x000004e4   0x000004e4   0x00000060   Code   RO         1043    i.SystemInit        system_ht32f165x.o
+    0x00000544   0x00000544   0x0000009c   Code   RO          182    i.UART0_IRQHandler  ht32f165x_it.o
+    0x000005e0   0x000005e0   0x00000008   Code   RO         4027    i.USART_FIFOReset   ht32f1655_56_usart.o
+    0x000005e8   0x000005e8   0x00000034   Code   RO         4035    i.USART_Init        ht32f1655_56_usart.o
+    0x0000061c   0x0000061c   0x00000010   Code   RO         4036    i.USART_IntConfig   ht32f1655_56_usart.o
+    0x0000062c   0x0000062c   0x000000ac   Code   RO          183    i.USART_Interrupt_Init  ht32f165x_it.o
+    0x000006d8   0x000006d8   0x0000000c   Code   RO         4042    i.USART_RFITLConfig  ht32f1655_56_usart.o
+    0x000006e4   0x000006e4   0x00000006   Code   RO         4046    i.USART_ReceiveData  ht32f1655_56_usart.o
+    0x000006ea   0x000006ea   0x00000014   Code   RO         4047    i.USART_RxCmd       ht32f1655_56_usart.o
+    0x000006fe   0x000006fe   0x00000004   Code   RO         4049    i.USART_SendData    ht32f1655_56_usart.o
+    0x00000702   0x00000702   0x0000000c   Code   RO         4059    i.USART_TFITLConfig  ht32f1655_56_usart.o
+    0x0000070e   0x0000070e   0x00000014   Code   RO         4061    i.USART_TxCmd       ht32f1655_56_usart.o
+    0x00000722   0x00000722   0x00000002   Code   RO          184    i.UsageFault_Handler  ht32f165x_it.o
+    0x00000724   0x00000724   0x0000000e   Code   RO         5142    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x00000732   0x00000732   0x00000002   Code   RO         5143    i.__scatterload_null  mc_w.l(handlers.o)
+    0x00000734   0x00000734   0x0000000e   Code   RO         5144    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x00000742   0x00000742   0x00000002   PAD
+    0x00000744   0x00000744   0x0000005c   Code   RO          903    i.callback_spiRxQ_process_at_hfsm2  bc5602_host2.o
+    0x000007a0   0x000007a0   0x00000044   Code   RO          733    i.change_syncword_ptxPipe0_to_prxPipeYouwant  bc5602_host.o
+    0x000007e4   0x000007e4   0x000000a0   Code   RO          734    i.debug_rxpackets_from_ptx_not_consecutive  bc5602_host.o
+    0x00000884   0x00000884   0x0000001c   Code   RO          465    i.delay_unit_50us   tmr50us.o
+    0x000008a0   0x000008a0   0x00000010   Code   RO          735    i.entry_hfsm1_prx   bc5602_host.o
+    0x000008b0   0x000008b0   0x0000008c   Code   RO          739    i.host5602_fsm1     bc5602_host.o
+    0x0000093c   0x0000093c   0x00000154   Code   RO          740    i.host5602_fsm1_prx  bc5602_host.o
+    0x00000a90   0x00000a90   0x00000290   Code   RO          741    i.host5602_fsm1_ptx  bc5602_host.o
+    0x00000d20   0x00000d20   0x00000028   Code   RO          904    i.host5602_fsm2     bc5602_host2.o
+    0x00000d48   0x00000d48   0x00000040   Code   RO          742    i.host5602_process  bc5602_host.o
+    0x00000d88   0x00000d88   0x00000358   Code   RO          743    i.init_5603_v4_sz_ic_20230615  bc5602_host.o
+    0x000010e0   0x000010e0   0x00000074   Code   RO          744    i.init_mcu          bc5602_host.o
+    0x00001154   0x00001154   0x00000004   Code   RO          508    i.init_softspi      softspi.o
+    0x00001158   0x00001158   0x000000c0   Code   RO          745    i.init_syncID       bc5602_host.o
+    0x00001218   0x00001218   0x00000012   Code   RO          398    i.lownibble_to_ascii  usart.o
+    0x0000122a   0x0000122a   0x00000002   PAD
+    0x0000122c   0x0000122c   0x000000e8   Code   RO            4    i.main              main.o
+    0x00001314   0x00001314   0x0000002c   Code   RO          746    i.movedata_spiTxQ_to_ptx_txfifo  bc5602_host.o
+    0x00001340   0x00001340   0x00000028   Code   RO          747    i.movedata_to_spiTxQ  bc5602_host.o
+    0x00001368   0x00001368   0x00000044   Code   RO          905    i.movedata_to_spiTxQ___prx  bc5602_host2.o
+    0x000013ac   0x000013ac   0x00000058   Code   RO          906    i.movedata_to_spiTxQ___ptx  bc5602_host2.o
+    0x00001404   0x00001404   0x0000009c   Code   RO          509    i.pd012346_as_outputmode  softspi.o
+    0x000014a0   0x000014a0   0x00000068   Code   RO          748    i.prx_process_possible_rxdr_before_roleswitch_to_ptx  bc5602_host.o
+    0x00001508   0x00001508   0x000000fc   Code   RO          749    i.set_PE_OUTPUT_MDOE  bc5602_host.o
+    0x00001604   0x00001604   0x00000008   Code   RO          750    i.spi_clear_irq1    bc5602_host.o
+    0x0000160c   0x0000160c   0x000000b4   Code   RO          510    i.spi_cmd0          softspi.o
+    0x000016c0   0x000016c0   0x00000006   Code   RO          649    i.spi_cmd0_08_software_reset  spi_cmd.o
+    0x000016c6   0x000016c6   0x00000006   Code   RO          650    i.spi_cmd0_09_txfifo_flush  spi_cmd.o
+    0x000016cc   0x000016cc   0x00000006   Code   RO          651    i.spi_cmd0_0A_deepsleep  spi_cmd.o
+    0x000016d2   0x000016d2   0x00000006   Code   RO          652    i.spi_cmd0_0C_lightsleep  spi_cmd.o
+    0x000016d8   0x000016d8   0x00000006   Code   RO          653    i.spi_cmd0_0E_TX    spi_cmd.o
+    0x000016de   0x000016de   0x00000006   Code   RO          654    i.spi_cmd0_0F_middlesleep  spi_cmd.o
+    0x000016e4   0x000016e4   0x00000008   Code   RO          655    i.spi_cmd0_20_set_register_bank  spi_cmd.o
+    0x000016ec   0x000016ec   0x00000006   Code   RO          657    i.spi_cmd0_89_rxfifo_flush  spi_cmd.o
+    0x000016f2   0x000016f2   0x0000000a   Code   RO          511    i.spi_cmdd_10_write_pipe_0_ID  softspi.o
+    0x000016fc   0x000016fc   0x0000006c   Code   RO          512    i.spi_cmdd_11_txfifo_write  softspi.o
+    0x00001768   0x00001768   0x0000000a   Code   RO          513    i.spi_cmdd_12_write_pipe_1_ID  softspi.o
+    0x00001772   0x00001772   0x00000002   PAD
+    0x00001774   0x00001774   0x0000006c   Code   RO          514    i.spi_cmdd_13_txfifo_write_no_ack  softspi.o
+    0x000017e0   0x000017e0   0x00000074   Code   RO          515    i.spi_cmdd_18_txfifo_prx_w_ack_payload  softspi.o
+    0x00001854   0x00001854   0x00000008   Code   RO          516    i.spi_cmdd_90_read_pipe_0_ID  softspi.o
+    0x0000185c   0x0000185c   0x00000008   Code   RO          517    i.spi_cmdd_92_read_pipe_1_ID  softspi.o
+    0x00001864   0x00001864   0x00000150   Code   RO          519    i.spi_cmdd_BF_rxfifo_read  softspi.o
+    0x000019b4   0x000019b4   0x00000084   Code   RO          520    i.spi_octet         softspi.o
+    0x00001a38   0x00001a38   0x00000108   Code   RO          521    i.spi_r             softspi.o
+    0x00001b40   0x00001b40   0x0000005c   Code   RO          522    i.spi_read_ID       softspi.o
+    0x00001b9c   0x00001b9c   0x0000003c   Code   RO          523    i.spi_read_ID_foo   softspi.o
+    0x00001bd8   0x00001bd8   0x00000006   Code   RO          751    i.spi_read_fifostatus  bc5602_host.o
+    0x00001bde   0x00001bde   0x00000018   Code   RO          752    i.spi_read_n_clear_irq1  bc5602_host.o
+    0x00001bf6   0x00001bf6   0x00000002   PAD
+    0x00001bf8   0x00001bf8   0x0000001c   Code   RO          753    i.spi_read_rxfifo_to_spiRxQ  bc5602_host.o
+    0x00001c14   0x00001c14   0x00000012   Code   RO          754    i.spi_read_sta1_omst  bc5602_host.o
+    0x00001c26   0x00001c26   0x00000002   PAD
+    0x00001c28   0x00001c28   0x00000058   Code   RO          524    i.spi_w             softspi.o
+    0x00001c80   0x00001c80   0x00000048   Code   RO          525    i.spi_write_ID      softspi.o
+    0x00001cc8   0x00001cc8   0x0000000c   Code   RO          466    i.tmr50usGetCurrentTicks  tmr50us.o
+    0x00001cd4   0x00001cd4   0x00000018   Code   RO          467    i.tmr50usIsExpired  tmr50us.o
+    0x00001cec   0x00001cec   0x0000004c   Code   RO          399    i.uart_putchar      usart.o
+    0x00001d38   0x00001d38   0x00000016   Code   RO          400    i.uart_putchar_n    usart.o
+    0x00001d4e   0x00001d4e   0x00000014   Code   RO          401    i.uart_puts         usart.o
+    0x00001d62   0x00001d62   0x00000026   Code   RO          402    i.uart_putu16       usart.o
+    0x00001d88   0x00001d88   0x00000014   Code   RO          403    i.uart_putu8        usart.o
+    0x00001d9c   0x00001d9c   0x00000020   Data   RO         5140    Region$$Table       anon$$obj.o
 
 
-    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x00001ad0, Size: 0x00000074, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x00001dbc, Size: 0x00000074, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x00001ad0   0x00000008   Data   RW          406    .data               usart.o
-    0x20000008   0x00001ad8   0x00000004   Data   RW          407    .data               usart.o
-    0x2000000c   0x00001adc   0x00000004   Data   RW          408    .data               usart.o
-    0x20000010   0x00001ae0   0x00000004   Data   RW          468    .data               tmr50us.o
-    0x20000014   0x00001ae4   0x00000001   Data   RW          526    .data               softspi.o
-    0x20000015   0x00001ae5   0x00000003   PAD
-    0x20000018   0x00001ae8   0x00000050   Data   RW          755    .data               bc5602_host.o
-    0x20000068   0x00001b38   0x00000006   Data   RW          907    .data               bc5602_host2.o
-    0x2000006e   0x00001b3e   0x00000002   PAD
-    0x20000070   0x00001b40   0x00000004   Data   RW         1043    .data               system_ht32f165x.o
+    0x20000000   0x00001dbc   0x00000008   Data   RW          406    .data               usart.o
+    0x20000008   0x00001dc4   0x00000004   Data   RW          407    .data               usart.o
+    0x2000000c   0x00001dc8   0x00000004   Data   RW          408    .data               usart.o
+    0x20000010   0x00001dcc   0x00000004   Data   RW          468    .data               tmr50us.o
+    0x20000014   0x00001dd0   0x00000001   Data   RW          526    .data               softspi.o
+    0x20000015   0x00001dd1   0x00000003   PAD
+    0x20000018   0x00001dd4   0x00000050   Data   RW          756    .data               bc5602_host.o
+    0x20000068   0x00001e24   0x00000006   Data   RW          908    .data               bc5602_host2.o
+    0x2000006e   0x00001e2a   0x00000002   PAD
+    0x20000070   0x00001e2c   0x00000004   Data   RW         1044    .data               system_ht32f165x.o
 
 
-    Execution Region ER_ZI (Exec base: 0x20000074, Load base: 0x00001b44, Size: 0x00000a64, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_ZI (Exec base: 0x20000074, Load base: 0x00001e30, Size: 0x00000a64, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x20000074        -       0x00000400   Zero   RW          404    .bss                usart.o
     0x20000474        -       0x00000400   Zero   RW          405    .bss                usart.o
-    0x20000874        -       0x00000058   Zero   RW          754    .bss                bc5602_host.o
-    0x200008cc        -       0x0000000c   Zero   RW          906    .bss                bc5602_host2.o
-    0x200008d8        -       0x00000200   Zero   RW         1074    STACK               startup_ht32f165x.o
+    0x20000874        -       0x00000058   Zero   RW          755    .bss                bc5602_host.o
+    0x200008cc        -       0x0000000c   Zero   RW          907    .bss                bc5602_host2.o
+    0x200008d8        -       0x00000200   Zero   RW         1075    STACK               startup_ht32f165x.o
 
 
 ==============================================================================
@@ -1889,7 +1912,7 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-      3152        386          0         80         88      18549   bc5602_host.o
+      3156        388          0         80         88      18585   bc5602_host.o
        288         58          0          6         12       3705   bc5602_host2.o
         62          0          0          0          0       3548   ht32f1655_56_bftm.o
        200         24          0          0          0      10828   ht32f1655_56_ckcu.o
@@ -1899,7 +1922,7 @@ Image component sizes
        150          0          0          0          0      13602   ht32f1655_56_usart.o
        392         54          0          0          0      49528   ht32f165x_it.o
        232         24          0          0          0      58290   main.o
-      1098         80          0          1          0      11925   softspi.o
+      1844        106          0          1          0      13823   softspi.o
         50          0          0          0          0       3699   spi_cmd.o
        376        348          0          0        512        804   startup_ht32f165x.o
         96         14          0          4          0       1759   system_ht32f165x.o
@@ -1907,9 +1930,9 @@ Image component sizes
        194         12          0         16       2048       4081   usart.o
 
     ----------------------------------------------------------------------
-      6744       1032         32        116       2660     203415   Object Totals
+      7492       1060         32        116       2660     205349   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        12          0          0          5          0          0   (incl. Padding)
+        10          0          0          5          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -1946,15 +1969,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      6832       1048         32        116       2660     198747   Grand Totals
-      6832       1048         32        116       2660     198747   ELF Image Totals
-      6832       1048         32        116          0          0   ROM Totals
+      7580       1076         32        116       2660     200525   Grand Totals
+      7580       1076         32        116       2660     200525   ELF Image Totals
+      7580       1076         32        116          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 6864 (   6.70kB)
+    Total RO  Size (Code + RO Data)                 7612 (   7.43kB)
     Total RW  Size (RW Data + ZI Data)              2776 (   2.71kB)
-    Total ROM Size (Code + RO Data + RW Data)       6980 (   6.82kB)
+    Total ROM Size (Code + RO Data + RW Data)       7728 (   7.55kB)
 
 ==============================================================================
 
