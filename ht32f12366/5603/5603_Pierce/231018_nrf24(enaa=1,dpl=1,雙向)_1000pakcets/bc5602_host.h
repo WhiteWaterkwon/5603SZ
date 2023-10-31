@@ -40,7 +40,7 @@
 // <o> BC5603 IC
 //    <28=>  D800 5602 G2TC8 Pierece
 //    <36=>	 BC Module 5603 Pierece
-#define _5603Board_	28
+#define _5603Board_	36
 // <o> Front End IC
 //    <23=>  5602 V3 MP Fullmask
 //    <07=>  5602G2_TC7_220831
@@ -48,7 +48,7 @@
 #define _FRONTEND_V_               12
 // <o> RF_CH 0~127, (2400+RF_CH)Mhz
 //    <0-127:1>
-#define RFCH_FRONTEND              40
+#define RFCH_FRONTEND              83
 //</h>
 
 // <o> SPI software or hardware
@@ -70,7 +70,7 @@
 //    <250=> 250 kbps
 //    <1000=>  1 Mbps
 //    <2000=>  2 Mbps
-#define DATARATE                   250
+#define DATARATE                   2000
 
 // <o> Middle Sleep Time (unit: 50 us)
 //    <0-1000000:1>
@@ -190,7 +190,7 @@
 // <o> DPL2[7] enable INV_NOACK
 //    <0x00=> Disabled
 //    <0x80=> Enabled
-#define DPL2_EN_INV_NOACK          0x80
+#define DPL2_EN_INV_NOACK          0x00
 //</h>
 
 //<h> DPL

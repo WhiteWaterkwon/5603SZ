@@ -43,7 +43,7 @@
 #define _5603Board_	36
 // <o> RF_CH 0~127, (2400+RF_CH)Mhz
 //    <0-127:1>
-#define RFCH_FRONTEND              40
+#define RFCH_FRONTEND              83
 //</h>
 
 // <o> SPI software or hardware
@@ -65,7 +65,7 @@
 //    <250=> 250 kbps
 //    <1000=>  1 Mbps
 //    <2000=>  2 Mbps
-#define DATARATE                   1000
+#define DATARATE                   2000
 
 // <o> Middle Sleep Time (unit: 50 us)
 //    <0-1000000:1>

@@ -1884,7 +1884,7 @@ else {
                 if(tmr50usIsExpired(hfsm1.delay_offset,  100))  // debug
               //if(tmr50usIsExpired(hfsm1.delay_offset,   200))  // debug
                 {
-										debug_i=1;
+										//debug_i=1;
                     hfsm1.state = ST_PTX_LIGHT_SLEEP;
                 }
             break;

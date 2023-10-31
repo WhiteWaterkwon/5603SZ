@@ -74,7 +74,7 @@ u8   spi_Read(SpiState state);
 
 //Configurable settings
 #define DEF_FILL_CHR        0
-#define DEF_RF_CHAN         40    //channel
+
 #define DEF_PAYLOAD_SIZE    32      //Max length 32
 #define DEF_RETRY_COUNT     5       //15 is MAX
 #define DEF_RETRY_DELAY     4       //in 250uS increments

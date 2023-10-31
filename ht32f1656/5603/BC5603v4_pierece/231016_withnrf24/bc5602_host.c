@@ -993,7 +993,7 @@ static void init_5603_v4_sz_ic_20230615(void)
 		spi_w(0x2E, 0xEF);              //RX1
     spi_w(0x2F, 0x56);              //RX2
     spi_w(0x30, 0x09);              //RX3
-		spi_w(0x31, 0x20);              //RX4
+		spi_w(0x31, 0x21);              //RX4
 		spi_w(0x32, 0x08);              //RX5
 		spi_w(0x33, 0x25);			       //TX1     [0]  PAD_EN: TX PA driver enable
                                     //        [3:1]RAMP_DN   000:x  001:30u  010:40u  011:50u  100:65u  101:80u  110:100u  111:120u
@@ -1010,7 +1010,7 @@ static void init_5603_v4_sz_ic_20230615(void)
 		spi_w(0x35, 0x30);// 7dbm       //TX3     [7]-			
 		//spi_w(0x34, 0x7D);// -5dbm       //TX2 duplicated bank0[0x3F]
 		//spi_w(0x35, 0x0F);// -5dbm       //TX3     [7]-			
-		spi_w(0x36, 0x05);              //TX4     [7:4]-
+		spi_w(0x36, 0x02);              //TX4     [7:4]-
                                     //        [3]  PAD_OW
                                     //        [2:0]DLY_PAD, PAD delay. 000:6us  001:20us  010:30us  011:40us  100:55us  101:75us  110:100us  111:128us		
 	//	spi_w(0x37, 0x50);              //CA1			

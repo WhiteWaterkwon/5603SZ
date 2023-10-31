@@ -36,6 +36,9 @@
 
 // <<< Use Configuration Wizard in Context Menu >>>
 
+// <o> RF_CH 0~127, (2400+RF_CH)Mhz
+//    <0-127:1>
+#define DEF_RF_CHAN         41    //channel
 // <o> Mode 
 //    <0x02=> PTX
 //    <0x03=> PRX
