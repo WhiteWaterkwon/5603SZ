@@ -43,7 +43,7 @@
 #define _5603Board_	36
 // <o> RF_CH 0~127, (2400+RF_CH)Mhz
 //    <0-127:1>
-#define RFCH_FRONTEND              83
+#define RFCH_FRONTEND              40
 //</h>
 
 // <o> SPI software or hardware

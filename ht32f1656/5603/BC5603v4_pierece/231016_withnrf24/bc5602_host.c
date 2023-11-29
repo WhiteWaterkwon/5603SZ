@@ -718,7 +718,7 @@ static void init_5603_v4_sz_ic_20230615(void)
                                     //        [1]  RX_FULL
                                     //        [0]  RX_EMPTY
 																		
-    spi_w(0x06, 0x80|0x00|0x04);         //IO1     [5:3]GIO2S[2:0]=0h:-     , [2:0]GIO1S[2:0]=0h:-      , [7:6]PADDS[1:0] PAD drive strength:0:0.5mA,1:1mA,2:5mA,3:10mA
+    spi_w(0x06, 0x80|0x04|0x00);         //IO1     [5:3]GIO2S[2:0]=0h:-     , [2:0]GIO1S[2:0]=0h:-      , [7:6]PADDS[1:0] PAD drive strength:0:0.5mA,1:1mA,2:5mA,3:10mA
     
   #if   _SPI_WIRES_ == 3
     spi_w(0x07, 0x50);              //IO2     [7:4]GIO4S[3:0]=5h:IRQ   , [3:0]GIO3S[3:0]=0h:-
@@ -880,9 +880,9 @@ static void init_5603_v4_sz_ic_20230615(void)
                                     //        [2:0]IFDET_OK_THD[2:0]: IF detection OK threshold
                                     //        [7:3]OFFSET	
 		#elif DATARATE == 1000
-			spi_w(0x21, 0x74);              //AGC2
+			spi_w(0x21, 0x71);              //AGC2
 		#elif DATARATE == 2000
-			spi_w(0x21, 0x74);              //AGC2
+			spi_w(0x21, 0x71);              //AGC2
 		#endif
 	  spi_w(0x22, 0x11);              //AGC3(RO read only)
                                     //        [2:0]AGC_ST[2:0]:AGC state machine's state, 0x7:AGC_complete
@@ -941,7 +941,13 @@ static void init_5603_v4_sz_ic_20230615(void)
 				spi_w(0x32, 0x00);						//DA9 [7:0]-DAC_I[7:0]
 				spi_w(0x33, 0x02);   				  //DA10
 				                              //[1:0]DAC_I[9:8]		
-				spi_w(0x35, 0x03);   				  //AGC9 DBFS_OFFSET [2:0]		PDIFF_THDUPH [1:0]	AGC_TS_EN [1:0]	 
+		#if   DATARATE == 250
+			spi_w(0x35, 0x03);   				  //AGC9 DBFS_OFFSET [2:0]		PDIFF_THDUPH [1:0]	AGC_TS_EN [1:0]	 
+		#elif DATARATE == 1000
+		  spi_w(0x35, 0x03);   				  //AGC9 DBFS_OFFSET [2:0]		PDIFF_THDUPH [1:0]	AGC_TS_EN [1:0]	 		
+		#elif DATARATE == 2000
+			 spi_w(0x35, 0x03);   				  //AGC9 DBFS_OFFSET [2:0]		PDIFF_THDUPH [1:0]	AGC_TS_EN [1:0]	 
+		#endif	
 		
 //bank 2
     spi_cmd0_20_set_register_bank(2);
@@ -952,7 +958,7 @@ static void init_5603_v4_sz_ic_20230615(void)
                                     //        [4:3]GAIN_BPF[1:0] 00:12dB, 01:18dB, 10:24dB, 11:24dB
                                     //        [7:5]GAIN_PGA[2:0] 000:0dB, 001:6dB, 010:12dB, 011:18dB, 100:24dB, 101:30dB, 110/111:36dB
 		#elif DATARATE == 1000
-			spi_w(0x21, 0x57); 
+			spi_w(0x21, 0x2E); 
 		#elif DATARATE == 2000
 			spi_w(0x21, 0x77); 
 		#endif	
@@ -1010,16 +1016,28 @@ static void init_5603_v4_sz_ic_20230615(void)
 		spi_w(0x35, 0x30);// 7dbm       //TX3     [7]-			
 		//spi_w(0x34, 0x7D);// -5dbm       //TX2 duplicated bank0[0x3F]
 		//spi_w(0x35, 0x0F);// -5dbm       //TX3     [7]-			
+		#if   DATARATE == 250
 		spi_w(0x36, 0x02);              //TX4     [7:4]-
                                     //        [3]  PAD_OW
-                                    //        [2:0]DLY_PAD, PAD delay. 000:6us  001:20us  010:30us  011:40us  100:55us  101:75us  110:100us  111:128us		
+                                    //        [2:0]DLY_PAD, PAD delay. 000:6us  001:20us  010:30us  011:40us  100:55us  101:75us  110:100us  111:128us	
+		#elif DATARATE == 1000
+			spi_w(0x36, 0x04);   
+		#elif DATARATE == 2000
+			spi_w(0x36, 0x02);    
+		#endif	
 	//	spi_w(0x37, 0x50);              //CA1			
 		spi_w(0x38, 0x20);              //CA2				#RC calibration manual setting  22 16
-		spi_w(0x39, 0x90);              //CA3  		new[7]  FDCOC_EN
+		#if   DATARATE == 250
+			spi_w(0x39, 0x90);              //CA3  		new[7]  FDCOC_EN
                                     //        [6:5]-
                                     //        [4:2]DLY_DCOCTB: DCOC turbo mode timing (switch RC) 000:0us, 001:2us, 010:4us, 011:5us, 100:6us, 101:7us, 110:8us, 111:10us
                                     //        [1]  DCOCTB_EN: DCOC turbo mode trigger as PWR_SOFT=1
                                     //        [0]  DCOC_ENB: RX DCOC (server loop) disable
+		#elif DATARATE == 1000
+			spi_w(0x39, 0x90);              //CA3  		new[7]  FDCOC_EN  
+		#elif DATARATE == 2000
+			spi_w(0x39, 0x90);              //CA3  		new[7]  FDCOC_EN   
+		#endif	
 		spi_w(0x3A, 0x57);              //LD1: SXLDO_EN[7:6]=01(1.5V),VCOLDO_EN[5:4]=01(1.5V),XOLDO[3:2]=01(1.5V)
 		spi_w(0x3B, 0x57);							//LD2: DIG_LDO[7:6]=01(1.2V), IFLDO_EN[5:4]=01(1.5V),ADCLDO_EN[3:2]=01(1.5V)	  57
 		spi_w(0x3C, 0x4B);							//pierce XO_4B//LD3: IB_BG[1:0]=2 LNALDO_EN[2:1]=01(1.5V) with Reg34=6F
@@ -1044,7 +1062,7 @@ static void init_5603_v4_sz_ic_20230615(void)
                                     //        [2:0]  CMA 	
 																
 
-		spi_w(0x2E, 0x40);							//RFT1
+		spi_w(0x2E, 0x40);							//RFT2
 		                                //        [6:4]  IB_PGA 
                                     //        [2:0]  CLA  						
 	  #if   DATARATE == 250
@@ -1916,9 +1934,9 @@ static void host5602_fsm1_prx(void)
                     break;
                 }
                 #endif
-								spi_cmd0_20_set_register_bank(3);
+								//spi_cmd0_20_set_register_bank(3);
 								//uart_putu8(spi_r(0x22));
-								spi_r(0x3c);
+								//spi_r(0x3c);
             if (GPIO_IRQ3_IS_RESET())
             {
 								//delay_unit_50us(0);
@@ -1934,7 +1952,7 @@ static void host5602_fsm1_prx(void)
                 if( r_irq1 & 0x40 ) {                   // [6]RX_DR											
 								unsigned char rx_pipe_no;									
 									 debug_i++;
-									spi_cmd0_09_txfifo_flush();
+									//spi_cmd0_09_txfifo_flush();
 									r_irq2 = spi_read_fifostatus();
 									
 								//uart_putu8(r_irq2);

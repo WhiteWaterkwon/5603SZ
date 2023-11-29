@@ -48,29 +48,29 @@
 #define _FRONTEND_V_               12
 // <o> RF_CH 0~127, (2400+RF_CH)Mhz
 //    <0-127:1>
-#define RFCH_FRONTEND              83
+#define RFCH_FRONTEND              40
 //</h>
 
 // <o> SPI software or hardware
 //    <0=> software SPI
 //    <1=> hardware SPI
-#define _SPI_MODE_                 1
+#define _SPI_MODE_                 0
 // <o> SPI 3 or 4-wire
 //    <3=> 3-wire SPI
 //    <4=> 4-wire SPI
-#define _SPI_WIRES_                4
+#define _SPI_WIRES_                3
 
 // <o> Mode 
 //    <0x04=> PTX
 //    <0x05=> PRX
-#define _HOST_TESTMODE_            4
+#define _HOST_TESTMODE_            5
 
 
 // <o> Data Rate
 //    <250=> 250 kbps
 //    <1000=>  1 Mbps
 //    <2000=>  2 Mbps
-#define DATARATE                   2000
+#define DATARATE                   1000
 
 // <o> Middle Sleep Time (unit: 50 us)
 //    <0-1000000:1>
@@ -190,7 +190,7 @@
 // <o> DPL2[7] enable INV_NOACK
 //    <0x00=> Disabled
 //    <0x80=> Enabled
-#define DPL2_EN_INV_NOACK          0x00
+#define DPL2_EN_INV_NOACK          0x80
 //</h>
 
 //<h> DPL

@@ -27,9 +27,6 @@ Project File Date:  12/10/2021
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'HT32'
-compiling main.c...
-compiling softspi.c...
-compiling bc5602_host2.c...
 compiling bc5602_host.c...
 ..\bc5602_host.c(490): warning:  #177-D: variable "addr"  was declared but never referenced
       unsigned char addr, value;
@@ -37,17 +34,17 @@ compiling bc5602_host.c...
       unsigned char addr, value;
 ..\bc5602_host.c(675): warning:  #177-D: variable "i"  was declared but never referenced
   		int i;
-..\bc5602_host.c(1589): warning:  #550-D: variable "rt1"  was set but never used
+..\bc5602_host.c(1601): warning:  #550-D: variable "rt1"  was set but never used
       unsigned char rt1, rt2;
-..\bc5602_host.c(1589): warning:  #550-D: variable "rt2"  was set but never used
+..\bc5602_host.c(1601): warning:  #550-D: variable "rt2"  was set but never used
       unsigned char rt1, rt2;
-..\bc5602_host.c(1674): warning:  #177-D: variable "r_irq2"  was declared but never referenced
+..\bc5602_host.c(1686): warning:  #177-D: variable "r_irq2"  was declared but never referenced
       unsigned char r_irq1, r_irq2;
-..\bc5602_host.c(1975): warning:  #550-D: variable "r_irq2"  was set but never used
+..\bc5602_host.c(1987): warning:  #550-D: variable "r_irq2"  was set but never used
       unsigned char r_irq1, r_irq2;
-..\bc5602_host.c(1994): warning:  #550-D: variable "r_irq2"  was set but never used
+..\bc5602_host.c(2006): warning:  #550-D: variable "r_irq2"  was set but never used
       unsigned char r_irq1, r_irq2;
-..\bc5602_host.c(1995): warning:  #177-D: variable "aaaaaa"  was declared but never referenced
+..\bc5602_host.c(2007): warning:  #177-D: variable "aaaaaa"  was declared but never referenced
       static unsigned char  aaaaaa;
 ..\bc5602_host.c(396): warning:  #177-D: function "__read_fpga_all_ctrl_registers"  was declared but never referenced
   static void __read_fpga_all_ctrl_registers(void)
@@ -55,15 +52,15 @@ compiling bc5602_host.c...
   static void __check_v1_all_ctrl_registers(void)
 ..\bc5602_host.c(595): warning:  #177-D: function "test_read_chip_version"  was declared but never referenced
   static void test_read_chip_version(void)
-..\bc5602_host.c(1587): warning:  #177-D: function "read_rt2_upon_txds"  was declared but never referenced
+..\bc5602_host.c(1599): warning:  #177-D: function "read_rt2_upon_txds"  was declared but never referenced
   static void read_rt2_upon_txds(void)
-..\bc5602_host.c(1595): warning:  #177-D: function "read_rt2_upon_maxrt"  was declared but never referenced
+..\bc5602_host.c(1607): warning:  #177-D: function "read_rt2_upon_maxrt"  was declared but never referenced
   static void read_rt2_upon_maxrt(void)
-..\bc5602_host.c(1641): warning:  #177-D: function "change_amble2"  was declared but never referenced
+..\bc5602_host.c(1653): warning:  #177-D: function "change_amble2"  was declared but never referenced
    static void change_amble2(void)  //preamble length 1 or 2 bytes
 ..\bc5602_host.c: 15 warnings, 0 errors
 linking...
-Program Size: Code=7804 RO-data=32 RW-data=112 ZI-data=2664  
+Program Size: Code=9016 RO-data=32 RW-data=112 ZI-data=2664  
 FromELF: creating hex file...
 After Build - User command #1: fromelf --bin -o ".\HT32\12366\Obj\HT32.axf.bin" ".\HT32\12366\Obj\HT32.axf"
 ".\HT32\12366\Obj\HT32.axf" - 0 Error(s), 15 Warning(s).

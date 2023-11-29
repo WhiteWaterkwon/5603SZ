@@ -27,8 +27,42 @@ Project File Date:  09/15/2022
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'HT32'
-".\HT32\Obj\HT32.axf" - 0 Error(s), 0 Warning(s).
-Build Time Elapsed:  00:00:00
+compiling bc5602_host2.c...
+compiling main.c...
+compiling bc5602_host.c...
+..\bc5602_host.c(680): warning:  #177-D: variable "i"  was declared but never referenced
+  		int i;
+..\bc5602_host.c(1738): warning:  #111-D: statement is unreachable
+  									debug_TX_DS++;
+..\bc5602_host.c(1561): warning:  #550-D: variable "r_irq2"  was set but never used
+      unsigned char r_irq1, r_irq2;
+..\bc5602_host.c(1869): warning:  #550-D: variable "r_irq2"  was set but never used
+      unsigned char r_irq1, r_irq2;
+..\bc5602_host.c(1888): warning:  #550-D: variable "r_irq2"  was set but never used
+      unsigned char r_irq1, r_irq2;
+..\bc5602_host.c(1889): warning:  #177-D: variable "aaaaaa"  was declared but never referenced
+      static unsigned char  aaaaaa;
+..\bc5602_host.c(387): warning:  #177-D: function "spi_write_2fpga_rxg"  was declared but never referenced
+  static void spi_write_2fpga_rxg(void)
+..\bc5602_host.c(396): warning:  #177-D: function "init_1adc"  was declared but never referenced
+  static void init_1adc(void)
+..\bc5602_host.c(402): warning:  #177-D: function "__read_fpga_all_ctrl_registers"  was declared but never referenced
+  static void __read_fpga_all_ctrl_registers(void)
+..\bc5602_host.c(601): warning:  #177-D: function "test_read_chip_version"  was declared but never referenced
+  static void test_read_chip_version(void)
+..\bc5602_host.c(1475): warning:  #177-D: function "read_rt2_upon_txds"  was declared but never referenced
+  static void read_rt2_upon_txds(void)
+..\bc5602_host.c(1482): warning:  #177-D: function "read_rt2_upon_maxrt"  was declared but never referenced
+  static void read_rt2_upon_maxrt(void)
+..\bc5602_host.c(1538): warning:  #177-D: function "debug_rxpackets_from_prx_not_consecutive"  was declared but never referenced
+  static void debug_rxpackets_from_prx_not_consecutive(unsigned char len, unsigned char *pPayload)
+..\bc5602_host.c: 13 warnings, 0 errors
+compiling softspi.c...
+linking...
+Program Size: Code=7560 RO-data=32 RW-data=116 ZI-data=2660  
+FromELF: creating hex file...
+".\HT32\Obj\HT32.axf" - 0 Error(s), 13 Warning(s).
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

@@ -1,0 +1,21 @@
+==========        =========
+ht32f52352        nRF24L01+
+==========        =========
+hardware 4-wire SPI
+¸}     A1 ------- CE
+¸}     A2 ------- IRQ
+¸}     A3 ------- CSN  SPI  (A3: software control CSN select)
+¸}     B3 ------- SCK  SPI  (B3: hardware SPI
+¸}     B4 ------- MOSI SPI  (B4: hardware SPI
+¸}     B5 ------- MISO SPI  (B5: hardware SPI
+¸}    VDD ------- 3V3
+¸}    GND ------- GND
+
+debug
+¸}    A8  USART0 TXD ------> 
+¸}    A10 USART0 RXD <------
+
+
+attenuation
+¸}     A4 USART1 TXD ------> 
+¸}     A5 USART1 RXD <------

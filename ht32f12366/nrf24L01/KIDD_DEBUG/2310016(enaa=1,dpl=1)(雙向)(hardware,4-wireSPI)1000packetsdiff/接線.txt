@@ -1,0 +1,23 @@
+==========         =========
+ht32f12366         nRF24L01+
+==========         =========
+software 4-wire SPI
+¸}      D0 ------> CSN  SPI
+¸}      D2 <------ MISO SPI
+¸}      D3 ------> SCK  SPI
+¸}      D4 ------> MOSI SPI
+¸}      D6 ------> CE
+¸}      D5 <------ IRQ
+¸}     3V3 ------- 3V3
+¸}     GND ------- GND
+
+
+hardware 4-wire SPI
+        D0 ------> CSN  SPI  (D0: software control CSN select)
+        A6 <------ MISO SPI  (A6: hardware SPI
+        A4 ------> SCK  SPI  (A4: hardware SPI
+        A5 ------> MOSI SPI  (A5: hardware SPI
+        D6 ------> CE
+        D5 <------ IRQ
+       3V3 ------- 3V3
+       GND ------- GND

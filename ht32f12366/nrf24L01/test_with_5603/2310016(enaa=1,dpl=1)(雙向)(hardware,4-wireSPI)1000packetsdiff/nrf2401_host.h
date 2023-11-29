@@ -38,7 +38,7 @@
 
 // <o> RF_CH 0~127, (2400+RF_CH)Mhz
 //    <0-127:1>
-#define DEF_RF_CHAN         41    //channel
+#define DEF_RF_CHAN         40    //channel
 // <o> Mode 
 //    <0x02=> PTX
 //    <0x03=> PRX
@@ -48,7 +48,7 @@
 //    <250=> 250K bps
 //    <1000=>  1M bps
 //    <2000=>  2M bps
-#define DATARATE                   1000
+#define DATARATE                   250
 
 // <o> Syncword
 //    <3=> 3 bytes
